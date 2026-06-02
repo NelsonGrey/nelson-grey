@@ -1,32 +1,12 @@
-.act-secrets/
-
-# OS
 .DS_Store
-
-# Node
 node_modules/
 
-# Runner artifacts (never commit)
-actions-runner/
+# Local-only artifacts from previous infrastructure era
+.act-secrets/
 runners/
-runner-manager/.env
-**/_work/
-**/_diag/
-**/bin/
-**/bin*
-**/externals/
-**/externals*
+tmp-ios-logs/
 
-
-# Local deploy keys / private keys (never commit)
-match_deploy_key
-match_deploy_key.pub
-*.pem
-
-# Local env files (never commit)
+# Secrets
 .env
 .env.*
-
-# Secrets and Certificates
-certs/
-profiles/
+*.pem
