@@ -2,7 +2,8 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const port = Number(process.env.PORT || 4173);
+const preferredPort = Number(process.env.PORT || 4173);
+const maxPortAttempts = 20;
 const rootDir = process.cwd();
 
 const mimeTypes = {
@@ -48,6 +49,28 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(port, "127.0.0.1", () => {
-  console.log(`Nelson Grey site running at http://127.0.0.1:${port}`);
+let activePort = preferredPort;
+let attempts = 0;
+
+function startServer() {
+  server.listen(activePort, "127.0.0.1", () => {
+    console.log(`Nelson Grey site running at http://127.0.0.1:${activePort}`);
+  });
+}
+
+server.on("error", (err) => {
+  if (err && err.code === "EADDRINUSE" && attempts < maxPortAttempts) {
+    attempts += 1;
+    activePort += 1;
+    console.warn(
+      `Port ${activePort - 1} is in use. Retrying on http://127.0.0.1:${activePort} ...`
+    );
+    setTimeout(startServer, 50);
+    return;
+  }
+
+  console.error("Failed to start dev server:", err && err.message ? err.message : err);
+  process.exit(1);
 });
+
+startServer();
