@@ -1,31 +1,57 @@
-# Nelson Grey Website
+## [fastlane match](https://docs.fastlane.tools/actions/match/)
 
-This repository contains the public-facing business website for Nelson Grey, an artificial intelligence fueled consulting and creative publishing company.
+> Do not modify this file, as it gets overwritten every time you run _match_.
 
-## Stack
+This repository contains all your certificates and provisioning profiles needed to build and sign your applications. They are encrypted using OpenSSL via a passphrase.
 
-- Static HTML, CSS, and JavaScript
-- Lightweight local Node.js static server
+**Important:** Make sure this repository is set to private and only your team members have access to this repo.
 
-## Project Files
+### Installation
 
-- `index.html`: Main website markup
-- `styles.css`: Visual system, layout, and responsive styling
-- `app.js`: Interaction behavior (mobile navigation, reveal animations, contact UX)
-- `dev-server.js`: Local static server for development and preview
+Make sure you have the latest version of the Xcode command line tools installed:
 
-## Run Locally
-
-```bash
-npm run dev
+```
+xcode-select --install
 ```
 
-Open:
+Install _fastlane_ using bundler by following instructions here on [fastlane docs](https://docs.fastlane.tools).
 
-```text
-http://127.0.0.1:4173
+or alternatively using 
+
+`brew install fastlane`
+
+### Usage
+
+Navigate to your project folder and run
+
+```
+fastlane match appstore
 ```
 
-## Direction
+```
+fastlane match adhoc
+```
 
-The repository is intentionally scoped to support a modern, professional business homepage and related website assets only.
+```
+fastlane match development
+```
+
+```
+fastlane match enterprise
+```
+
+For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
+
+### Content
+
+#### certs
+
+This directory contains all your certificates with their private keys
+
+#### profiles
+
+This directory contains all provisioning profiles
+
+---
+
+For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
