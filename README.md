@@ -29,3 +29,30 @@ http://127.0.0.1:4173
 ## Direction
 
 The repository is intentionally scoped to support a modern, professional business homepage and related website assets only.
+
+## Firebase Environments
+
+This project is configured for Firebase Hosting across three environments:
+
+- `dev` -> `nelson-grey-dev`
+- `staging` -> `nelson-grey-staging`
+- `prod` -> `nelson-grey-prod`
+
+Configuration files:
+
+- `.firebaserc`: project alias mapping
+- `firebase.json`: hosting setup (static site + SPA rewrites)
+
+### First-Time Setup
+
+```bash
+npm run firebase:login
+```
+
+### Deploy Commands
+
+```bash
+npm run firebase:deploy:dev
+npm run firebase:deploy:staging
+npm run firebase:deploy:prod
+```

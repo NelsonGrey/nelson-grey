@@ -4,6 +4,15 @@
   const submitButton = document.getElementById("submit-btn");
   const status = document.getElementById("form-status");
   const form = document.querySelector(".contact-form");
+  const planSelect = document.getElementById("plan");
+  const planButtons = document.querySelectorAll("[data-plan]");
+
+  if (planSelect) {
+    const queryPlan = new URLSearchParams(window.location.search).get("plan");
+    if (queryPlan) {
+      planSelect.value = queryPlan;
+    }
+  }
 
   if (menuButton && mobileMenu) {
     menuButton.addEventListener("click", function () {
@@ -24,14 +33,27 @@
 
   if (form && status && submitButton) {
     form.addEventListener("submit", function () {
+      const selectedPlan = planSelect && planSelect.value ? planSelect.value : "your selected plan";
       submitButton.disabled = true;
       submitButton.textContent = "Sending...";
       setTimeout(function () {
-        status.textContent = "Thanks. Your inquiry is queued. We will respond within one business day.";
+        status.textContent =
+          "Thanks. Your " + selectedPlan + " recommendation request is queued. We will respond within one business day.";
         submitButton.disabled = false;
-        submitButton.textContent = "Send Inquiry";
+        submitButton.textContent = "Request Recommendation";
         form.reset();
       }, 600);
+    });
+  }
+
+  if (planSelect && planButtons.length) {
+    planButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const plan = button.getAttribute("data-plan");
+        if (plan) {
+          planSelect.value = plan;
+        }
+      });
     });
   }
 
