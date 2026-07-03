@@ -3,6 +3,13 @@
   "private": true,
   "scripts": {
     "dev": "node dev-server.js",
-    "start": "node dev-server.js"
+    "start": "node dev-server.js",
+    "firebase:login": "npx firebase-tools login",
+    "firebase:deploy:dev": "npx firebase-tools deploy --project dev --only hosting",
+    "firebase:deploy:staging": "npx firebase-tools deploy --project staging --only hosting",
+    "firebase:deploy:prod": "npx firebase-tools deploy --project prod --only hosting"
+  },
+  "dependencies": {
+    "firebase": "^12.14.0"
   }
 }
