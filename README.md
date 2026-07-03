@@ -1,57 +1,58 @@
-## [fastlane match](https://docs.fastlane.tools/actions/match/)
+# Nelson Grey Website
 
-> Do not modify this file, as it gets overwritten every time you run _match_.
+This repository contains the public-facing business website for Nelson Grey, an artificial intelligence fueled consulting and creative publishing company.
 
-This repository contains all your certificates and provisioning profiles needed to build and sign your applications. They are encrypted using OpenSSL via a passphrase.
+## Stack
 
-**Important:** Make sure this repository is set to private and only your team members have access to this repo.
+- Static HTML, CSS, and JavaScript
+- Lightweight local Node.js static server
 
-### Installation
+## Project Files
 
-Make sure you have the latest version of the Xcode command line tools installed:
+- `index.html`: Main website markup
+- `styles.css`: Visual system, layout, and responsive styling
+- `app.js`: Interaction behavior (mobile navigation, reveal animations, contact UX)
+- `dev-server.js`: Local static server for development and preview
 
-```
-xcode-select --install
-```
+## Run Locally
 
-Install _fastlane_ using bundler by following instructions here on [fastlane docs](https://docs.fastlane.tools).
-
-or alternatively using 
-
-`brew install fastlane`
-
-### Usage
-
-Navigate to your project folder and run
-
-```
-fastlane match appstore
+```bash
+npm run dev
 ```
 
-```
-fastlane match adhoc
-```
+Open:
 
-```
-fastlane match development
+```text
+http://127.0.0.1:4173
 ```
 
+## Direction
+
+The repository is intentionally scoped to support a modern, professional business homepage and related website assets only.
+
+## Firebase Environments
+
+This project is configured for Firebase Hosting across three environments:
+
+- `dev` -> `nelson-grey-dev`
+- `staging` -> `nelson-grey-staging`
+- `prod` -> `nelson-grey-prod`
+
+Configuration files:
+
+- `.firebaserc`: project alias mapping
+- `firebase.json`: hosting setup (static site + SPA rewrites)
+
+### First-Time Setup
+
+```bash
+npm run firebase:login
 ```
-fastlane match enterprise
+
+### Deploy Commands
+
+```bash
+npm run firebase:deploy:dev
+npm run firebase:deploy:staging
+npm run firebase:deploy:prod
 ```
-
-For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
-
-### Content
-
-#### certs
-
-This directory contains all your certificates with their private keys
-
-#### profiles
-
-This directory contains all provisioning profiles
-
----
-
-For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)

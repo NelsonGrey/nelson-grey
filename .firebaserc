@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "nelson-grey-dev",
+    "dev": "nelson-grey-dev",
+    "staging": "nelson-grey-staging",
+    "prod": "nelson-grey-prod"
+  }
+}
