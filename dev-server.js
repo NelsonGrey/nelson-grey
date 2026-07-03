@@ -2,9 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const isManagedRuntime = Boolean(process.env.PORT);
 const preferredPort = Number(process.env.PORT || 4173);
-const preferredHost = process.env.HOST || (isManagedRuntime ? "0.0.0.0" : "127.0.0.1");
 const maxPortAttempts = 20;
 const rootDir = process.cwd();
 
@@ -55,17 +53,17 @@ let activePort = preferredPort;
 let attempts = 0;
 
 function startServer() {
-  server.listen(activePort, preferredHost, () => {
-    console.log(`Nelson Grey site running at http://${preferredHost}:${activePort}`);
+  server.listen(activePort, "127.0.0.1", () => {
+    console.log(`Nelson Grey site running at http://127.0.0.1:${activePort}`);
   });
 }
 
 server.on("error", (err) => {
-  if (!isManagedRuntime && err && err.code === "EADDRINUSE" && attempts < maxPortAttempts) {
+  if (err && err.code === "EADDRINUSE" && attempts < maxPortAttempts) {
     attempts += 1;
     activePort += 1;
     console.warn(
-      `Port ${activePort - 1} is in use. Retrying on http://${preferredHost}:${activePort} ...`
+      `Port ${activePort - 1} is in use. Retrying on http://127.0.0.1:${activePort} ...`
     );
     setTimeout(startServer, 50);
     return;
