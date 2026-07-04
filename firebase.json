@@ -19,6 +19,11 @@
         "source": "/personas",
         "destination": "/solutions",
         "type": 301
+      },
+      {
+        "source": "/proof",
+        "destination": "/results",
+        "type": 301
       }
     ],
     "rewrites": [
