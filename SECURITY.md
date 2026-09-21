@@ -5,7 +5,7 @@
 If you discover a security vulnerability in this project, please report it
 privately rather than opening a public issue.
 
-**Email:** mark.a.nelson@outlook.com
+**Email:** hello@nelsongrey.com
 
 Please include:
 
