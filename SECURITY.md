@@ -1,22 +1,30 @@
 # Security Policy
 
-## Reporting a Vulnerability
-
-If you discover a security vulnerability in this project, please report it
-privately rather than opening a public issue.
-
-**Email:** hello@nelsongrey.com
-
-Please include:
-
-- A description of the vulnerability and its potential impact
-- Steps to reproduce
-- Any relevant logs, screenshots, or proof-of-concept code
-
-We aim to acknowledge reports within a few business days and will keep you
-updated as the issue is investigated and resolved.
-
 ## Supported Versions
 
-This repository tracks a single deployed website (no versioned releases).
-Fixes are applied directly to the `main` branch and deployed to production.
+This repository holds the public-facing marketing website for Nelson Grey, an AI-fueled consulting and creative publishing company. Only the code currently deployed on each environment branch is supported — there is no long-term support for older commits.
+
+| Branch | Environment | Status |
+|---|---|---|
+| `main` | Production | Supported |
+| `staging` | Staging | Supported |
+| `develop` | Development | Supported |
+
+## Reporting a Vulnerability
+
+This repository doesn't have a public issue tracker, so please don't report security concerns that way. Use one of:
+
+- GitHub's [private vulnerability reporting](https://github.com/NelsonGrey/nelson-grey/security/advisories/new), or
+- Email **support@nelsongrey.com**
+
+Either way, include:
+
+- A description of the vulnerability and its potential impact
+- Steps to reproduce, or a proof of concept if available
+- Any relevant logs, request/response samples, or affected endpoints
+
+You should get an acknowledgement within a few business days.
+
+## Automated Dependency Scanning
+
+Dependabot alerts are enabled on this repository. Native GitHub secret scanning and code scanning (CodeQL) require GitHub Advanced Security, which isn't currently licensed for this org's private repositories, so neither is enabled here. Avoid committing credentials or secrets regardless — runtime secrets (e.g. the `FIREBASE_SERVICE_ACCOUNT` deploy key) are managed via GitHub Actions secrets scoped per GitHub Environment, never committed to source.
