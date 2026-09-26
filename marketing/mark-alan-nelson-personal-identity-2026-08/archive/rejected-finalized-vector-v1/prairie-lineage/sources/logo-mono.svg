@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="620" viewBox="0 0 2200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Mark Alan Nelson Prairie Lineage one-color logo</title>
+  <desc id="desc">A one-color version of the Prairie Lineage logo.</desc>
+  <g transform="translate(40 40) scale(.52734375)" fill="none" stroke="#142033">
+    <circle cx="512" cy="512" r="452" stroke-width="28"/>
+    <path d="M88 548 Q512 500 936 548" stroke-width="18"/>
+    <path d="M270 742V316L430 452L512 360L594 452L754 316V742" stroke-width="62" stroke-linejoin="miter"/>
+    <path d="M324 742L512 306L700 742M412 570H612" stroke-width="48" stroke-linejoin="miter"/>
+    <path d="M360 724V500L652 724V500" stroke-width="34" stroke-linejoin="miter"/>
+    <g fill="#142033" stroke="none"><circle cx="512" cy="156" r="22"/><circle cx="156" cy="512" r="22"/><circle cx="868" cy="512" r="22"/><circle cx="512" cy="868" r="22"/></g>
+  </g>
+  <text x="650" y="358" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="132" font-weight="700" letter-spacing="8" fill="#142033">MARK ALAN NELSON</text>
+</svg>

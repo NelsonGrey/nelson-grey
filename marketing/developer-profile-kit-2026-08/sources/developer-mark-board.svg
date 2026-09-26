@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Nelson Grey core and developer icon comparison">
+  <rect width="1920" height="1080" fill="#F8F4EA"/>
+  <text x="92" y="108" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="58" font-weight="700">Nelson Grey · Developer Edition</text>
+  <text x="94" y="160" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="500">Shared internal geometry. Purpose-built field treatments.</text>
+
+  <rect x="92" y="220" width="520" height="620" rx="40" fill="#FFFFFF" stroke="#D7CCB8" stroke-width="2"/>
+  <image href="nelson-grey-brand-icon.svg" x="152" y="280" width="400" height="400"/>
+  <text x="352" y="748" text-anchor="middle" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="700">CORE MARK</text>
+  <text x="352" y="794" text-anchor="middle" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="24">Core keyline · quiet light-field contrast</text>
+
+  <rect x="662" y="220" width="520" height="620" rx="40" fill="#FFFFFF" stroke="#D7CCB8" stroke-width="2"/>
+  <image href="nelson-grey-developer-icon.svg" x="722" y="280" width="400" height="400"/>
+  <text x="922" y="748" text-anchor="middle" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="700">DEVELOPER EDITION</text>
+  <text x="922" y="794" text-anchor="middle" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="24">Developer profiles · engineering channels</text>
+
+  <rect x="1232" y="220" width="596" height="620" rx="40" fill="#101722"/>
+  <text x="1292" y="300" fill="#F8F4EA" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700">WHAT IT MEANS</text>
+  <line x1="1294" y1="346" x2="1748" y2="346" stroke="#2B3944" stroke-width="2"/>
+  <circle cx="1312" cy="416" r="15" fill="#F8F4EA"/>
+  <text x="1354" y="428" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27">Connected N · Nelson heritage</text>
+  <circle cx="1312" cy="502" r="15" fill="#08756F"/>
+  <text x="1354" y="514" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27">Teal arc · cloud intelligence</text>
+  <circle cx="1312" cy="588" r="15" fill="#C9952F"/>
+  <text x="1354" y="600" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27">Gold signal · forward motion</text>
+  <circle cx="1312" cy="674" r="15" fill="#53616F" stroke="#F8F4EA" stroke-width="2"/>
+  <text x="1354" y="686" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27">Dark field · build environment</text>
+  <text x="1530" y="778" text-anchor="middle" fill="#B9AD99" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">INTERNAL GEOMETRY PRESERVED</text>
+
+  <text x="94" y="964" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="32" font-weight="700">Use for developer-facing profiles and channels.</text>
+  <text x="94" y="1020" fill="#08756F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="3">RAISED LLC SUFFIX · NO TAGLINE</text>
+</svg>
