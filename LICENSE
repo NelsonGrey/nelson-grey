@@ -1,11 +1,9 @@
-Copyright (c) 2026 Nelson Grey. All Rights Reserved.
+Copyright (c) 2026 Mark Nelson. All rights reserved.
 
-This repository and its contents — including source code, assets, and
-documentation — are the proprietary property of Nelson Grey. No part of
-this repository may be reproduced, distributed, modified, or used in any
-form or by any means without the prior written permission of Nelson Grey,
-except as may be expressly permitted by an applicable written agreement.
+This repository and all associated source code, assets, documentation, and build/deployment configuration are proprietary.
 
-This software is provided "as is", without warranty of any kind, express
-or implied, including but not limited to the warranties of
-merchantability, fitness for a particular purpose, and noninfringement.
+No permission is granted to use, copy, modify, merge, publish, distribute, sublicense, sell, or create derivative works from this material without prior written authorization from the copyright holder.
+
+You may view this repository on GitHub for reference only.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
