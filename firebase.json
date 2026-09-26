@@ -7,6 +7,7 @@
       ".git/**",
       ".gitignore",
       "node_modules/**",
+      "marketing/**",
       "README.md",
       "package.json",
       "package-lock.json",

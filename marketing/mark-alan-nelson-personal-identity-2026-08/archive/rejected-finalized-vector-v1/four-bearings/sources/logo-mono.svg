@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="620" viewBox="0 0 2200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Mark Alan Nelson Four Bearings one-color logo</title>
+  <desc id="desc">A one-color version of the Four Bearings logo.</desc>
+  <g transform="translate(44 42) scale(.5234375)" fill="none" stroke="#18314A" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M350 260L512 98L674 260" stroke-width="64"/>
+    <path d="M296 286L112 500L112 524L512 924L912 524L912 500L728 286" stroke-width="66"/>
+    <path d="M112 512H240M784 512H912" stroke-width="22"/>
+    <path d="M320 742V478L512 270L704 478V616L598 724V552" stroke-width="50"/>
+    <path d="M320 742L410 832M704 616L792 528" stroke-width="50"/>
+  </g>
+  <text x="660" y="248" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="600" letter-spacing="20" fill="#18314A">MARK ALAN</text>
+  <text x="650" y="454" font-family="Bodoni 72, Georgia, Times New Roman, serif" font-size="202" letter-spacing="6" fill="#18314A">NELSON</text>
+</svg>

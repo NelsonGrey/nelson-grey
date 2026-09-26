@@ -1,0 +1,40 @@
+concept,asset,path,format,dimensions,background,use
+shared,comparison source,identity-comparison.svg,SVG,1920x1080,limestone,editable comparison board
+shared,comparison board,identity-comparison-1920x1080.png,PNG,1920x1080,limestone,quick visual comparison
+prairie-lineage,primary icon source,prairie-lineage/sources/icon-primary.svg,SVG,1024x1024,transparent,editable master
+prairie-lineage,reverse icon source,prairie-lineage/sources/icon-reverse.svg,SVG,1024x1024,transparent,editable dark-layout master
+prairie-lineage,mono icon source,prairie-lineage/sources/icon-mono.svg,SVG,1024x1024,transparent,editable one-color master
+prairie-lineage,primary logo source,prairie-lineage/sources/logo-primary.svg,SVG,2200x620,transparent,editable horizontal master
+prairie-lineage,reverse logo source,prairie-lineage/sources/logo-reverse.svg,SVG,2200x620,navy,editable dark-field master
+prairie-lineage,mono logo source,prairie-lineage/sources/logo-mono.svg,SVG,2200x620,transparent,editable one-color master
+prairie-lineage,primary icon,prairie-lineage/png/icon-primary-1024x1024.png,PNG,1024x1024,transparent,high-resolution avatar
+prairie-lineage,primary icon,prairie-lineage/png/icon-primary-512x512.png,PNG,512x512,transparent,profile icon
+prairie-lineage,primary icon,prairie-lineage/png/icon-primary-256x256.png,PNG,256x256,transparent,small profile icon
+prairie-lineage,primary icon,prairie-lineage/png/icon-primary-64x64.png,PNG,64x64,transparent,small UI icon
+prairie-lineage,primary icon,prairie-lineage/png/icon-primary-32x32.png,PNG,32x32,transparent,minimum digital icon
+prairie-lineage,reverse icon,prairie-lineage/png/icon-reverse-1024x1024.png,PNG,1024x1024,transparent,dark-layout avatar
+prairie-lineage,reverse icon,prairie-lineage/png/icon-reverse-512x512.png,PNG,512x512,transparent,dark-layout profile icon
+prairie-lineage,mono icon,prairie-lineage/png/icon-mono-1024x1024.png,PNG,1024x1024,transparent,one-color production
+prairie-lineage,mono icon,prairie-lineage/png/icon-mono-512x512.png,PNG,512x512,transparent,one-color production
+prairie-lineage,primary logo,prairie-lineage/png/logo-primary-2200x620.png,PNG,2200x620,transparent,light-layout horizontal logo
+prairie-lineage,reverse logo,prairie-lineage/png/logo-reverse-2200x620.png,PNG,2200x620,navy,dark-layout horizontal logo
+prairie-lineage,mono logo,prairie-lineage/png/logo-mono-2200x620.png,PNG,2200x620,transparent,one-color horizontal logo
+four-bearings,primary icon source,four-bearings/sources/icon-primary.svg,SVG,1024x1024,transparent,editable master
+four-bearings,reverse icon source,four-bearings/sources/icon-reverse.svg,SVG,1024x1024,transparent,editable dark-layout master
+four-bearings,mono icon source,four-bearings/sources/icon-mono.svg,SVG,1024x1024,transparent,editable one-color master
+four-bearings,primary logo source,four-bearings/sources/logo-primary.svg,SVG,2200x620,transparent,editable horizontal master
+four-bearings,reverse logo source,four-bearings/sources/logo-reverse.svg,SVG,2200x620,navy,editable dark-field master
+four-bearings,mono logo source,four-bearings/sources/logo-mono.svg,SVG,2200x620,transparent,editable one-color master
+four-bearings,primary icon,four-bearings/png/icon-primary-1024x1024.png,PNG,1024x1024,transparent,high-resolution avatar
+four-bearings,primary icon,four-bearings/png/icon-primary-512x512.png,PNG,512x512,transparent,profile icon
+four-bearings,primary icon,four-bearings/png/icon-primary-256x256.png,PNG,256x256,transparent,small profile icon
+four-bearings,primary icon,four-bearings/png/icon-primary-64x64.png,PNG,64x64,transparent,small UI icon
+four-bearings,primary icon,four-bearings/png/icon-primary-32x32.png,PNG,32x32,transparent,minimum digital icon
+four-bearings,reverse icon,four-bearings/png/icon-reverse-1024x1024.png,PNG,1024x1024,transparent,dark-layout avatar
+four-bearings,reverse icon,four-bearings/png/icon-reverse-512x512.png,PNG,512x512,transparent,dark-layout profile icon
+four-bearings,mono icon,four-bearings/png/icon-mono-1024x1024.png,PNG,1024x1024,transparent,one-color production
+four-bearings,mono icon,four-bearings/png/icon-mono-512x512.png,PNG,512x512,transparent,one-color production
+four-bearings,primary logo,four-bearings/png/logo-primary-2200x620.png,PNG,2200x620,transparent,light-layout horizontal logo
+four-bearings,reverse logo,four-bearings/png/logo-reverse-2200x620.png,PNG,2200x620,navy,dark-layout horizontal logo
+four-bearings,mono logo,four-bearings/png/logo-mono-2200x620.png,PNG,2200x620,transparent,one-color horizontal logo
+

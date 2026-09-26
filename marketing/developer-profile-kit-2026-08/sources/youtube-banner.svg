@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440" role="img" aria-label="Nelson Grey LLC channel banner">
+  <image href="header-art-master.svg" width="2560" height="1440" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="2560" height="1440" fill="#101722" opacity="0.28"/>
+  <rect x="505" y="500" width="1550" height="440" rx="42" fill="#101722" opacity="0.78" stroke="#2B3944" stroke-width="3"/>
+  <image href="nelson-grey-mark-reverse.svg" x="620" y="570" width="300" height="300"/>
+  <image href="nelson-grey-name-lockup-reverse.svg" x="990" y="539" width="920" height="204"/>
+</svg>
