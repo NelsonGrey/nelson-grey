@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Mark Alan Nelson identity comparison</title>
+  <desc id="desc">A comparison of the finalized Prairie Lineage and Four Bearings personal identities.</desc>
+  <rect width="1920" height="1080" fill="#F5F0E6"/>
+  <text x="96" y="105" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="54" font-weight="700" fill="#142033">MARK ALAN NELSON</text>
+  <text x="96" y="158" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="25" letter-spacing="5" fill="#53616F">FINAL PERSONAL IDENTITY DIRECTIONS</text>
+
+  <rect x="76" y="215" width="858" height="720" rx="28" fill="#FFFCF7" stroke="#D8CEBC" stroke-width="2"/>
+  <rect x="986" y="215" width="858" height="720" rx="28" fill="#FFFCF7" stroke="#D8CEBC" stroke-width="2"/>
+
+  <text x="126" y="286" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#142033">Prairie Lineage</text>
+  <text x="1036" y="286" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#18314A">Four Bearings</text>
+
+  <image x="112" y="330" width="786" height="222" xlink:href="prairie-lineage/sources/logo-primary.svg" preserveAspectRatio="xMidYMid meet"/>
+  <image x="1022" y="330" width="786" height="222" xlink:href="four-bearings/sources/logo-primary.svg" preserveAspectRatio="xMidYMid meet"/>
+
+  <text x="126" y="625" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#142033">Warm • familial • contemporary</text>
+  <text x="126" y="675" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Shelter-shaped M • rising A • continuing N</text>
+  <text x="126" y="713" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Four family waypoints • Illinois horizon</text>
+  <text x="126" y="751" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Best for personal profiles and family-centered work</text>
+
+  <text x="1036" y="625" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#18314A">Directional • editorial • enduring</text>
+  <text x="1036" y="675" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Open compass diamond • upward learning point</text>
+  <text x="1036" y="713" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Four connected bearings • dual-discipline paths</text>
+  <text x="1036" y="751" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#53616F">Best for writing, speaking, and executive profiles</text>
+
+  <g transform="translate(126 820)">
+    <rect width="150" height="48" rx="10" fill="#142033"/><rect x="170" width="150" height="48" rx="10" fill="#236E70"/><rect x="340" width="150" height="48" rx="10" fill="#B66A3C"/><rect x="510" width="150" height="48" rx="10" fill="#F4EFE5" stroke="#D8CEBC"/>
+  </g>
+  <g transform="translate(1036 820)">
+    <rect width="150" height="48" rx="10" fill="#18314A"/><rect x="170" width="150" height="48" rx="10" fill="#3B7186"/><rect x="340" width="150" height="48" rx="10" fill="#AD7B32"/><rect x="510" width="150" height="48" rx="10" fill="#F1EBDD" stroke="#D8CEBC"/>
+  </g>
+
+  <text x="960" y="1018" text-anchor="middle" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="19" letter-spacing="2" fill="#66717D">TWO COMPLETE DIRECTIONS • ONE PERSONAL STORY</text>
+</svg>

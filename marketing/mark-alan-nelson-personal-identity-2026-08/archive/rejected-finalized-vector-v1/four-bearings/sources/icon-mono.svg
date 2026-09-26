@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Four Bearings one-color icon</title>
+  <desc id="desc">A one-color version of the Four Bearings mark.</desc>
+  <g fill="none" stroke="#18314A" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M350 260L512 98L674 260" stroke-width="64"/>
+    <path d="M296 286L112 500L112 524L512 924L912 524L912 500L728 286" stroke-width="66"/>
+    <path d="M112 512H240M784 512H912" stroke-width="22"/>
+    <path d="M320 742V478L512 270L704 478V616L598 724V552" stroke-width="50"/>
+    <path d="M320 742L410 832M704 616L792 528" stroke-width="50"/>
+  </g>
+</svg>
