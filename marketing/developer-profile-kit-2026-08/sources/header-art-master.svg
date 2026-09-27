@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4096" height="2304" viewBox="0 0 4096 2304" role="img" aria-label="Nelson Grey developer profile header background">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101722"/>
+      <stop offset="0.56" stop-color="#17212B"/>
+      <stop offset="1" stop-color="#101722"/>
+    </linearGradient>
+    <radialGradient id="quietGlow" cx="52%" cy="46%" r="52%">
+      <stop offset="0" stop-color="#233541" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#101722" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="256" height="256" patternUnits="userSpaceOnUse">
+      <path d="M256 0H0V256" fill="none" stroke="#D7CCB8" stroke-width="2" opacity="0.11"/>
+    </pattern>
+    <linearGradient id="tealPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08756F" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#08756F" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="4096" height="2304" fill="url(#background)"/>
+  <rect width="4096" height="2304" fill="url(#quietGlow)"/>
+  <rect width="4096" height="2304" fill="url(#grid)"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-220 1770C160 1390 616 1390 908 1682C1100 1874 1136 2110 1090 2370" stroke="#08756F" stroke-width="18" opacity="0.82"/>
+    <path d="M-150 380C206 118 606 122 866 382C1074 590 1106 850 1020 1064" stroke="#D7CCB8" stroke-width="6" opacity="0.34"/>
+    <path d="M3178 -160C3178 304 3548 674 4012 674H4268" stroke="#08756F" stroke-width="18" opacity="0.8"/>
+    <path d="M2924 2310C2924 1846 3294 1476 3758 1476H4268" stroke="#D7CCB8" stroke-width="6" opacity="0.35"/>
+    <path d="M364 1660H774C950 1660 1092 1802 1092 1978V2304" stroke="#C9952F" stroke-width="5" opacity="0.55"/>
+    <path d="M3304 330H3704C3896 330 4052 486 4052 678V1010" stroke="#C9952F" stroke-width="5" opacity="0.58"/>
+  </g>
+
+  <g>
+    <path d="M0 0H520V520H214C96 520 0 424 0 306Z" fill="#F8F4EA" opacity="0.9"/>
+    <path d="M0 1536H412C548 1536 658 1646 658 1782V2304H0Z" fill="#08756F" opacity="0.3"/>
+    <path d="M256 512H768V1024H540C384 1024 256 896 256 740Z" fill="url(#tealPanel)"/>
+    <path d="M3584 0H4096V512H3840C3698 512 3584 398 3584 256Z" fill="#F8F4EA" opacity="0.78"/>
+    <path d="M3840 768H4096V1280H3840Z" fill="url(#tealPanel)"/>
+    <path d="M3328 1792H4096V2304H3328V2052C3328 1908 3444 1792 3588 1792Z" fill="#F8F4EA" opacity="0.82"/>
+    <rect x="768" y="1536" width="256" height="256" rx="70" fill="#C6553F" opacity="0.22"/>
+    <rect x="3072" y="512" width="256" height="256" rx="70" fill="#08756F" opacity="0.38"/>
+  </g>
+
+  <g fill="#08756F">
+    <circle cx="768" cy="512" r="20"/>
+    <circle cx="1092" cy="1978" r="22"/>
+    <circle cx="3584" cy="512" r="20"/>
+    <circle cx="3328" cy="1792" r="22"/>
+  </g>
+  <g fill="#C9952F">
+    <circle cx="364" cy="1660" r="18"/>
+    <circle cx="3704" cy="330" r="18"/>
+    <path d="M3270 1034C3280 1068 3302 1090 3336 1100C3302 1110 3280 1132 3270 1166C3260 1132 3238 1110 3204 1100C3238 1090 3260 1068 3270 1034Z"/>
+  </g>
+
+  <g fill="#D7CCB8" opacity="0.24">
+    <circle cx="520" cy="1320" r="8"/><circle cx="560" cy="1320" r="8"/><circle cx="600" cy="1320" r="8"/><circle cx="640" cy="1320" r="8"/>
+    <circle cx="520" cy="1360" r="8"/><circle cx="560" cy="1360" r="8"/><circle cx="600" cy="1360" r="8"/><circle cx="640" cy="1360" r="8"/>
+    <circle cx="3456" cy="1120" r="8"/><circle cx="3496" cy="1120" r="8"/><circle cx="3536" cy="1120" r="8"/><circle cx="3576" cy="1120" r="8"/>
+    <circle cx="3456" cy="1160" r="8"/><circle cx="3496" cy="1160" r="8"/><circle cx="3536" cy="1160" r="8"/><circle cx="3576" cy="1160" r="8"/>
+  </g>
+</svg>

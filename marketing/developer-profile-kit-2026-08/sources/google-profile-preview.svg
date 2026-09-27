@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="Nelson Grey Google Play developer profile concept preview">
+  <rect width="1600" height="1200" fill="#EEF1F5"/>
+  <rect x="70" y="54" width="1460" height="1092" rx="34" fill="#FFFFFF"/>
+  <clipPath id="headerClip"><rect x="70" y="54" width="1460" height="821" rx="34"/></clipPath>
+  <g clip-path="url(#headerClip)"><image href="header-art-master.svg" x="70" y="54" width="1460" height="821" preserveAspectRatio="xMidYMid slice"/></g>
+  <rect x="70" y="782" width="1460" height="364" fill="#FFFFFF"/>
+  <rect x="142" y="690" width="230" height="230" rx="36" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="14"/>
+  <image href="nelson-grey-developer-icon.svg" x="151" y="699" width="212" height="212"/>
+  <text x="422" y="876" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="700">Nelson Grey LLC</text>
+  <text x="424" y="948" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="500">Software and digital products from Nelson Grey LLC, including</text>
+  <text x="424" y="994" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="500">Modulo Squares.</text>
+  <text x="424" y="1066" fill="#08756F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="2">PROFILE CONCEPT · FINAL CONSOLE RENDERING MAY DIFFER</text>
+</svg>

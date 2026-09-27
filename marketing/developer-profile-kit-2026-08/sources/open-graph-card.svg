@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Nelson Grey LLC social sharing card">
+  <defs>
+    <linearGradient id="shade" x1="0" x2="1">
+      <stop offset="0" stop-color="#101722" stop-opacity="0.94"/>
+      <stop offset="0.62" stop-color="#101722" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#101722" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <image href="header-art-master.svg" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1200" height="630" fill="url(#shade)"/>
+  <image href="nelson-grey-mark-reverse.svg" x="74" y="115" width="244" height="244"/>
+  <image href="nelson-grey-name-lockup-reverse.svg" x="354" y="128" width="640" height="142"/>
+  <text x="82" y="497" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="31" font-weight="500">Software projects from Nelson Grey LLC.</text>
+</svg>

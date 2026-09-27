@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Nelson Grey LLC portfolio hero">
+  <defs>
+    <linearGradient id="heroShade" x1="0" x2="1">
+      <stop offset="0" stop-color="#101722" stop-opacity="0.97"/>
+      <stop offset="0.56" stop-color="#101722" stop-opacity="0.73"/>
+      <stop offset="1" stop-color="#101722" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <image href="header-art-master.svg" width="2400" height="1350" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="2400" height="1350" fill="url(#heroShade)"/>
+  <image href="nelson-grey-mark-reverse.svg" x="210" y="320" width="460" height="460"/>
+  <image href="nelson-grey-name-lockup-reverse.svg" x="735" y="335" width="1200" height="266"/>
+  <text x="226" y="975" fill="#D7CCB8" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="52" font-weight="500">Software projects from Nelson Grey LLC.</text>
+</svg>
