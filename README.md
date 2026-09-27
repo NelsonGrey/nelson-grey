@@ -13,6 +13,8 @@ This repository contains the public-facing business website for Nelson Grey, an 
 - `styles.css`: Visual system, layout, and responsive styling
 - `app.js`: Interaction behavior (mobile navigation, reveal animations, contact UX)
 - `dev-server.js`: Local static server for development and preview
+- `marketing/developer-profile-kit-2026-08/`: Working developer-profile brand, platform, and promotional assets; excluded from Firebase Hosting
+- `games/<game-slug>/`: Privacy/Terms/Support pages for a published game that doesn't have its own site (e.g. `games/intercept-echo/`), reusing this site's design system; not linked from the main nav, only from that game's store listing and in-app links
 
 ## Run Locally
 
@@ -28,7 +30,7 @@ http://127.0.0.1:4173
 
 ## Direction
 
-The repository is intentionally scoped to support a modern, professional business homepage and related website assets only.
+The repository is intentionally scoped to support a modern, professional business homepage and related website assets, plus the legal/support pages for Nelson Grey's published games — not full per-game marketing sites (Modulo Squares' promotional site is its own separate repo/domain; games without one of their own get lightweight pages here instead, under `games/<game-slug>/`).
 
 ## Firebase Environments
 
