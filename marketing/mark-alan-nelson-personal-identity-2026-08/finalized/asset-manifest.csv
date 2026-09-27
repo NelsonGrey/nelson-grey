@@ -1,0 +1,27 @@
+concept,asset,path,dimensions,background,use
+prairie-lineage,approved icon master,prairie-lineage/png/icon-master-1254x1254.png,1254x1254,transparent,source of truth
+prairie-lineage,approved logo master,prairie-lineage/png/logo-master-1800x512.png,1800x512,transparent,source of truth
+prairie-lineage,icon,prairie-lineage/png/icon-1024x1024.png,1024x1024,transparent,high resolution
+prairie-lineage,icon,prairie-lineage/png/icon-512x512.png,512x512,transparent,profile
+prairie-lineage,icon,prairie-lineage/png/icon-256x256.png,256x256,transparent,small profile
+prairie-lineage,icon,prairie-lineage/png/icon-128x128.png,128x128,transparent,UI
+prairie-lineage,icon,prairie-lineage/png/icon-64x64.png,64x64,transparent,small UI
+prairie-lineage,icon,prairie-lineage/png/icon-32x32.png,32x32,transparent,favicon only
+prairie-lineage,logo,prairie-lineage/png/logo-1600x455.png,1600x455,transparent,large horizontal
+prairie-lineage,logo,prairie-lineage/png/logo-1200x341.png,1200x341,transparent,web horizontal
+four-bearings,approved icon master,four-bearings/png/icon-master-1254x1254.png,1254x1254,transparent,source of truth
+four-bearings,approved logo master,four-bearings/png/logo-master-1710x546.png,1710x546,transparent,source of truth
+four-bearings,icon,four-bearings/png/icon-1024x1024.png,1024x1024,transparent,high resolution
+four-bearings,icon,four-bearings/png/icon-512x512.png,512x512,transparent,profile
+four-bearings,icon,four-bearings/png/icon-256x256.png,256x256,transparent,small profile
+four-bearings,icon,four-bearings/png/icon-128x128.png,128x128,transparent,UI
+four-bearings,icon,four-bearings/png/icon-64x64.png,64x64,transparent,small UI
+four-bearings,icon,four-bearings/png/icon-32x32.png,32x32,transparent,favicon only
+four-bearings,logo,four-bearings/png/logo-1600x511.png,1600x511,transparent,large horizontal
+four-bearings,logo,four-bearings/png/logo-1200x383.png,1200x383,transparent,web horizontal
+shared,fidelity overview,proofs/fidelity-overview-1920x1080.png,1920x1080,white,visual QA
+shared,small-size proof,proofs/small-size-proof-1200x360.png,1200x360,white,visual QA
+four-bearings,native icon reference,proofs/four-bearings-native-icon-reference.png,600x620,limestone,pixel-exact board crop
+four-bearings,native logo reference,proofs/four-bearings-native-logo-reference.png,950x340,limestone,pixel-exact board crop
+prairie-lineage,light proof,proofs/prairie-lineage-on-light-1920x1080.png,1920x1080,parchment,visual QA
+four-bearings,light proof,proofs/four-bearings-on-light-1920x1080.png,1920x1080,limestone,visual QA

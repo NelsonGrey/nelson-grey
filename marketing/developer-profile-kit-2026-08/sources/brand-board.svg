@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Nelson Grey LLC compact brand board">
+  <rect width="1920" height="1080" fill="#F8F4EA"/>
+  <image href="nelson-grey-name-lockup.svg" x="88" y="22" width="400" height="89"/>
+  <text x="510" y="100" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="56" font-weight="700">· Brand System</text>
+  <text x="90" y="148" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="500">Source-of-truth identity from nelsongrey.com.</text>
+  <rect x="88" y="208" width="440" height="440" rx="34" fill="#FFFAF0" stroke="#D7CCB8" stroke-width="2"/>
+  <image href="nelson-grey-brand-icon.svg" x="130" y="250" width="356" height="356"/>
+  <image href="nelson-grey-wordmark-primary.svg" x="594" y="250" width="1235" height="348"/>
+  <text x="604" y="667" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="700">Developer use</text>
+  <text x="604" y="722" fill="#08756F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="600">Dark colorway · standardized LLC exponent</text>
+  <text x="88" y="786" fill="#101722" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="31" font-weight="700">Brand &amp; layout palette</text>
+  <g font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600">
+    <rect x="88" y="820" width="290" height="140" rx="18" fill="#101722"/><text x="112" y="922" fill="#F8F4EA">INK · #101722</text>
+    <rect x="400" y="820" width="290" height="140" rx="18" fill="#53616F"/><text x="424" y="922" fill="#FFFFFF">SLATE · #53616F</text>
+    <rect x="712" y="820" width="290" height="140" rx="18" fill="#F8F4EA" stroke="#D7CCB8"/><text x="736" y="922" fill="#101722">IVORY · #F8F4EA</text>
+    <rect x="1024" y="820" width="290" height="140" rx="18" fill="#08756F"/><text x="1048" y="922" fill="#F8F4EA">TEAL · #08756F</text>
+    <rect x="1336" y="820" width="290" height="140" rx="18" fill="#C6553F"/><text x="1360" y="922" fill="#FFFFFF">CORAL · #C6553F</text>
+    <rect x="1648" y="820" width="184" height="140" rx="18" fill="#C9952F"/><text x="1663" y="922" fill="#101722" font-size="17">GOLD · #C9952F</text>
+  </g>
+  <text x="88" y="1024" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="22">Space Grotesk / Newsreader · connected paths · clear hierarchy · restrained signal accents</text>
+</svg>

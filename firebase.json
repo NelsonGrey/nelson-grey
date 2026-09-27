@@ -7,6 +7,7 @@
       ".git/**",
       ".gitignore",
       "node_modules/**",
+      "marketing/**",
       "README.md",
       "package.json",
       "package-lock.json",
@@ -23,6 +24,11 @@
       {
         "source": "/proof",
         "destination": "/results",
+        "type": 301
+      },
+      {
+        "source": "/games/shift-register-arcade/:page",
+        "destination": "/games/intercept-echo/:page",
         "type": 301
       }
     ],

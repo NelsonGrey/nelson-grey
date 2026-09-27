@@ -106,12 +106,9 @@ img {
   width: 2.85rem;
   height: 2.85rem;
   overflow: hidden;
-  border: 2px solid rgba(201, 149, 47, 0.72);
   border-radius: 12px;
   background: url("assets/nelson-grey-mark.svg") center / cover no-repeat;
-  box-shadow:
-    0 0 0 1px rgba(248, 244, 234, 0.18),
-    0 8px 20px rgba(201, 149, 47, 0.16);
+  box-shadow: 0 8px 20px rgba(201, 149, 47, 0.16);
   color: transparent;
   font-size: 0;
 }
