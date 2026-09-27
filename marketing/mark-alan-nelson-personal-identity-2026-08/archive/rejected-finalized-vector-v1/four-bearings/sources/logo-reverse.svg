@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="620" viewBox="0 0 2200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Mark Alan Nelson Four Bearings reverse logo</title>
+  <desc id="desc">The Four Bearings logo for dark layouts.</desc>
+  <rect width="2200" height="620" rx="28" fill="#18314A"/>
+  <g transform="translate(44 42) scale(.5234375)">
+    <path d="M350 260L512 98L674 260" fill="none" stroke="#D8AA57" stroke-width="64" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M296 286L112 500L112 524L512 924L912 524L912 500L728 286" fill="none" stroke="#F1EBDD" stroke-width="66" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M112 512H240M784 512H912" fill="none" stroke="#D8AA57" stroke-width="22"/>
+    <path d="M320 742V478L512 270L704 478V616L598 724V552" fill="none" stroke="#75AABE" stroke-width="60" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M320 742L410 832M704 616L792 528" fill="none" stroke="#F1EBDD" stroke-width="60"/>
+  </g>
+  <text x="660" y="248" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="600" letter-spacing="20" fill="#75AABE">MARK ALAN</text>
+  <text x="650" y="454" font-family="Bodoni 72, Georgia, Times New Roman, serif" font-size="202" font-weight="400" letter-spacing="6" fill="#F1EBDD">NELSON</text>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1600" viewBox="0 0 1400 1600" role="img" aria-label="Nelson Grey LLC stacked logo">
+  <rect width="1400" height="1600" fill="#101722"/>
+  <image href="nelson-grey-mark-reverse.svg" x="320" y="120" width="760" height="760"/>
+  <image href="nelson-grey-name-lockup-reverse.svg" x="110" y="874" width="1180" height="261"/>
+  <line x1="470" y1="1300" x2="930" y2="1300" stroke="#2B3944" stroke-width="3"/>
+  <circle cx="684" cy="1300" r="14" fill="#08756F"/>
+  <circle cx="716" cy="1300" r="14" fill="#C9952F"/>
+</svg>
