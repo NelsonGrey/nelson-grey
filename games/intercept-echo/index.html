@@ -11,13 +11,15 @@
   <meta property="og:description" content="Shift, rotate, and transform an eight-bit register to crack intercepted transmissions before the clock runs out. Free to play on iOS." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nelsongrey.com/games/intercept-echo/" />
-  <meta property="og:image" content="https://nelsongrey.com/games/intercept-echo/assets/app-icon.png" />
+  <meta property="og:image" content="https://nelsongrey.com/games/intercept-echo/assets/wordmark.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Intercept Echo" />
   <meta name="twitter:description" content="Shift, rotate, and transform an eight-bit register to crack intercepted transmissions before the clock runs out." />
-  <meta name="twitter:image" content="https://nelsongrey.com/games/intercept-echo/assets/app-icon.png" />
-  <link rel="icon" type="image/png" href="/games/intercept-echo/assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="/games/intercept-echo/assets/app-icon.png" />
+  <meta name="twitter:image" content="https://nelsongrey.com/games/intercept-echo/assets/wordmark.png" />
+  <link rel="icon" type="image/svg+xml" href="/games/intercept-echo/assets/mark.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/games/intercept-echo/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/games/intercept-echo/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/games/intercept-echo/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
@@ -29,7 +31,7 @@
     "name": "Intercept Echo",
     "applicationCategory": "GameApplication",
     "operatingSystem": "iOS",
-    "image": "https://nelsongrey.com/games/intercept-echo/assets/app-icon.png",
+    "image": "https://nelsongrey.com/games/intercept-echo/assets/app-icon-512.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -43,9 +45,11 @@
   }
   </script>
   <style>
-    .brand .brand-mark, .footer-brand .footer-mark { background: linear-gradient(135deg, var(--teal), var(--gold)); color: #fffaf0; font-size: 1.1rem; font-weight: 800; }
-    .footer-brand .footer-mark { font-size: 0.72rem; }
-    .hero-visual img { border-radius: 22%; }
+    .brand .brand-mark, .footer-brand .footer-mark { background: url("/games/intercept-echo/assets/mark.svg") center / cover no-repeat; color: transparent; font-size: 0; }
+    .hero-visual img { border-radius: 20px; }
+    .screens-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .screens-grid img { width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid rgba(215, 204, 184, 0.86); box-shadow: var(--shadow); }
+    @media (max-width: 720px) { .screens-grid { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; } }
   </style>
 </head>
 <body>
@@ -83,7 +87,7 @@
         </div>
       </div>
       <figure class="hero-visual">
-        <img src="/games/intercept-echo/assets/app-icon.png" alt="Intercept Echo app icon" width="220" height="220" />
+        <img src="/games/intercept-echo/assets/wordmark.svg" alt="Intercept Echo" width="600" height="210" />
         <figcaption>
           <span>Free to play</span>
           <strong>Practice mode + the Intercept campaign</strong>
@@ -132,6 +136,18 @@
           <p class="persona-label">Game Center</p>
           <h3>Sign in for leaderboards and cloud save — always optional, never required to play.</h3>
         </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head wide">
+        <p class="eyebrow">See it in action</p>
+        <h2>Home, gameboard, and a live transmission.</h2>
+      </div>
+      <div class="screens-grid">
+        <img src="/games/intercept-echo/assets/screenshot-home.png" alt="Intercept Echo home screen" width="390" height="844" loading="lazy" />
+        <img src="/games/intercept-echo/assets/screenshot-gameboard.png" alt="Intercept Echo register puzzle gameboard" width="390" height="844" loading="lazy" />
+        <img src="/games/intercept-echo/assets/screenshot-transmission.png" alt="Intercept Echo intercepted transmission screen" width="390" height="844" loading="lazy" />
       </div>
     </section>
 
