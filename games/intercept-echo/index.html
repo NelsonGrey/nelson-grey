@@ -1,194 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="/consent.js"></script>
+  <script src="/consent.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intercept Echo</title>
-  <meta name="description" content="Shift, rotate, and transform an eight-bit register to crack intercepted transmissions before the clock runs out. Free to play on iOS." />
+  <title>Intercept Echo — Crack the transmission</title>
+  <meta name="description" content="A precise eight-bit puzzle game for iPhone. Count, shift, and rotate the register to reveal intercepted messages." />
   <link rel="canonical" href="https://nelsongrey.com/games/intercept-echo/" />
-  <meta property="og:title" content="Intercept Echo" />
-  <meta property="og:description" content="Shift, rotate, and transform an eight-bit register to crack intercepted transmissions before the clock runs out. Free to play on iOS." />
+  <meta property="og:title" content="Intercept Echo — Crack the transmission" />
+  <meta property="og:description" content="Count, shift, and rotate an eight-bit register. Every solved puzzle reveals another piece of the transmission." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nelsongrey.com/games/intercept-echo/" />
   <meta property="og:image" content="https://nelsongrey.com/games/intercept-echo/assets/wordmark.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Intercept Echo" />
-  <meta name="twitter:description" content="Shift, rotate, and transform an eight-bit register to crack intercepted transmissions before the clock runs out." />
+  <meta name="twitter:title" content="Intercept Echo — Crack the transmission" />
+  <meta name="twitter:description" content="A precise eight-bit puzzle game for iPhone." />
   <meta name="twitter:image" content="https://nelsongrey.com/games/intercept-echo/assets/wordmark.png" />
   <link rel="icon" type="image/svg+xml" href="/games/intercept-echo/assets/mark.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/games/intercept-echo/assets/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/games/intercept-echo/assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/games/intercept-echo/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Intercept Echo",
-    "applicationCategory": "GameApplication",
-    "operatingSystem": "iOS",
-    "image": "https://nelsongrey.com/games/intercept-echo/assets/app-icon-512.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Nelson Grey",
-      "url": "https://nelsongrey.com/"
-    }
-  }
-  </script>
-  <style>
-    .brand .brand-mark, .footer-brand .footer-mark { background: url("/games/intercept-echo/assets/mark.svg") center / cover no-repeat; color: transparent; font-size: 0; }
-    .hero-visual img { border-radius: 20px; }
-    .screens-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
-    .screens-grid img { width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid rgba(215, 204, 184, 0.86); box-shadow: var(--shadow); }
-    @media (max-width: 720px) { .screens-grid { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; } }
-  </style>
+  <link rel="stylesheet" href="/games/intercept-echo/game.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Intercept Echo","applicationCategory":"GameApplication","operatingSystem":"iOS","image":"https://nelsongrey.com/games/intercept-echo/assets/app-icon-512.png","publisher":{"@type":"Organization","name":"Nelson Grey","url":"https://nelsongrey.com/"}}</script>
 </head>
-<body>
-  <div class="background-grid" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="brand-mark">IE</span><span class="brand-text">Intercept Echo</span></a>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="/games/intercept-echo/privacy">Privacy</a>
-      <a href="/games/intercept-echo/terms">Terms</a>
-      <a href="/games/intercept-echo/cookies">Cookies</a>
-      <a href="/games/intercept-echo/support">Support</a>
-    </nav>
+<body class="echo-site">
+  <div class="echo-grid" aria-hidden="true"></div>
+  <header class="site-header echo-header">
+    <a class="brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="brand-mark">IE</span><span class="brand-text">INTERCEPT <b>ECHO</b></span></a>
+    <nav class="main-nav" aria-label="Primary"><a href="/games/intercept-echo/mission">Mission</a><a href="/games/intercept-echo/operations">Operations</a><a href="/games/intercept-echo/how-to-play">How to play</a></nav>
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </header>
-
-  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile">
-    <a href="/games/intercept-echo/privacy">Privacy</a>
-    <a href="/games/intercept-echo/terms">Terms</a>
-    <a href="/games/intercept-echo/cookies">Cookies</a>
-    <a href="/games/intercept-echo/support">Support</a>
-  </nav>
-
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="/games/intercept-echo/mission">Mission</a><a href="/games/intercept-echo/operations">Operations</a><a href="/games/intercept-echo/how-to-play">How to play</a></nav>
   <main>
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Free puzzle game for iOS</p>
-        <h1>Shift, rotate, crack the code.</h1>
-        <p class="lede">
-          Intercept Echo turns an eight-bit register into a fast, tactile puzzle. Shift, rotate, and transform visible bit patterns to match incoming targets before the clock runs out — no prior knowledge of binary or programming required.
-        </p>
-        <div class="hero-actions">
-          <a href="https://apps.apple.com/app/id6816505842" class="btn">Get it on the App Store</a>
-          <a href="/games/intercept-echo/support" class="btn btn-ghost">Support</a>
-        </div>
+    <section class="echo-hero section">
+      <div class="echo-hero-copy">
+        <p class="signal-label"><span></span> Signal acquired / iOS</p>
+        <img class="echo-wordmark" src="/games/intercept-echo/assets/wordmark.svg" alt="Intercept Echo" width="1200" height="420" />
+        <h1>Every bit is a clue.</h1>
+        <p class="echo-lede">Count. Shift. Rotate. Master a tiny eight-bit machine and use it to crack coded transmissions—one exact move at a time.</p>
+        <div class="hero-actions"><a href="https://apps.apple.com/app/id6816505842" class="echo-button">View on the App Store <span aria-hidden="true">↗</span></a><a href="/games/intercept-echo/how-to-play" class="echo-text-link">Learn the signal <span aria-hidden="true">→</span></a></div>
+        <p class="availability">Free to play · Optional one-time ad removal</p>
       </div>
-      <figure class="hero-visual">
-        <img src="/games/intercept-echo/assets/wordmark.svg" alt="Intercept Echo" width="600" height="210" />
-        <figcaption>
-          <span>Free to play</span>
-          <strong>Practice mode + the Intercept campaign</strong>
-        </figcaption>
-      </figure>
-    </section>
-
-    <section class="section narrative reveal">
-      <p class="eyebrow">How it plays</p>
-      <h2>Learn the register one mechanic at a time.</h2>
-      <div class="outcome-grid">
-        <article>
-          <span>01</span>
-          <h3>Count</h3>
-          <p>Tap cells to set a value. Simple, exact, no guessing.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Shift</h3>
-          <p>Double and halve the register, with bits spilling off the ends as a resource to manage.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Rotate</h3>
-          <p>Wrap a bit around instead of losing it. Every operation is deterministic — no luck involved.</p>
-        </article>
+      <div class="echo-device-stage" aria-label="Intercept Echo gameplay preview">
+        <div class="radar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <figure class="phone phone-main"><img src="/games/intercept-echo/assets/screenshot-gameboard.png" alt="Eight-bit register puzzle with a target value of 19" width="390" height="844" /></figure>
+        <div class="transmission-chip chip-one"><small>TRANSMISSION</small><strong>01 / 50</strong></div><div class="transmission-chip chip-two"><small>SIGNAL</small><strong>▮ ▮ ▮ ▮</strong></div>
       </div>
     </section>
-
-    <section class="section reveal">
-      <div class="section-head wide">
-        <p class="eyebrow">Crack the transmission</p>
-        <h2>Work through the Intercept campaign, letter by letter.</h2>
-        <p>Each letter is a register puzzle; solve enough of them and the intercepted message reveals itself. Solve in the fewest moves for the best score — extra moves cost points, so efficient play is rewarded, not just speed.</p>
-      </div>
-      <div class="persona-grid">
-        <article class="persona-card">
-          <p class="persona-label">Scored, not just timed</p>
-          <h3>Fewer moves, higher score — real mastery, not just speed.</h3>
-        </article>
-        <article class="persona-card">
-          <p class="persona-label">Free to play</p>
-          <h3>Practice mode and the full Intercept campaign, supported by ads. Remove ads with a one-time purchase.</h3>
-        </article>
-        <article class="persona-card">
-          <p class="persona-label">Game Center</p>
-          <h3>Sign in for leaderboards and cloud save — always optional, never required to play.</h3>
-        </article>
-      </div>
+    <section class="mission-strip" id="mission"><div><span>01</span><p><b>Read the target</b>Study the value. Every state is visible.</p></div><div><span>02</span><p><b>Work the register</b>Change the eight bits with exact operations.</p></div><div><span>03</span><p><b>Reveal the message</b>Each solved letter clears the transmission.</p></div></section>
+    <section class="section echo-story reveal" id="operations">
+      <div class="story-copy"><p class="signal-label"><span></span> Operator training</p><h2>Three operations.<br />Hundreds of possibilities.</h2><p>You do not need to know binary. Intercept Echo teaches its logic in layers, then asks you to see the shortest route through the noise.</p><a class="echo-text-link" href="/games/intercept-echo/how-to-play">Open the field guide <span aria-hidden="true">→</span></a></div>
+      <div class="operation-list"><article><b>01</b><div><h3>Count</h3><p>Set individual bits and learn how eight switches become a number.</p></div><span class="bit-row">0 0 0 1 0 0 1 1</span></article><article><b>02</b><div><h3>Shift</h3><p>Double or halve the value as bits move through the register.</p></div><span class="operation-symbol">&lt;&lt;</span></article><article><b>03</b><div><h3>Rotate</h3><p>Wrap the edge bit around. Preserve what a shift would discard.</p></div><span class="operation-symbol">↻</span></article></div>
     </section>
-
-    <section class="section reveal">
-      <div class="section-head wide">
-        <p class="eyebrow">See it in action</p>
-        <h2>Home, gameboard, and a live transmission.</h2>
-      </div>
-      <div class="screens-grid">
-        <img src="/games/intercept-echo/assets/screenshot-home.png" alt="Intercept Echo home screen" width="390" height="844" loading="lazy" />
-        <img src="/games/intercept-echo/assets/screenshot-gameboard.png" alt="Intercept Echo register puzzle gameboard" width="390" height="844" loading="lazy" />
-        <img src="/games/intercept-echo/assets/screenshot-transmission.png" alt="Intercept Echo intercepted transmission screen" width="390" height="844" loading="lazy" />
-      </div>
+    <section class="section campaign-section reveal">
+      <div class="campaign-visual"><figure class="phone phone-secondary"><img src="/games/intercept-echo/assets/screenshot-transmission.png" alt="An intercepted message waiting to be decoded" width="390" height="844" loading="lazy" /></figure><figure class="phone phone-tertiary"><img src="/games/intercept-echo/assets/screenshot-home.png" alt="Intercept Echo home screen" width="390" height="844" loading="lazy" /></figure></div>
+      <div class="campaign-copy"><p class="signal-label"><span></span> Intercept campaign</p><h2>A puzzle inside a mystery.</h2><p>Every cracked register reveals a letter. Spend signal to keep decoding, or risk an early guess when you think you know the whole message.</p><ul><li><span>12</span> authored transmissions</li><li><span>3</span> difficulty levels</li><li><span>0</span> random outcomes</li></ul></div>
     </section>
-
-    <section class="section quote reveal">
-      <blockquote>
-        "Compact rules, real mastery — and a good look at what a shift register actually does."
-      </blockquote>
-      <p>Built for puzzle players who like their logic exact.</p>
-    </section>
+    <section class="section echo-cta reveal"><img src="/games/intercept-echo/assets/mark.svg" alt="" width="180" height="180" /><p class="signal-label"><span></span> Incoming transmission</p><h2>Can you read it?</h2><p>Compact rules. Exact logic. A signal worth chasing.</p><a href="https://apps.apple.com/app/id6816505842" class="echo-button">View on the App Store <span aria-hidden="true">↗</span></a></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <a class="footer-brand" href="/games/intercept-echo/" aria-label="Intercept Echo home">
-          <span class="footer-mark">IE</span>
-          <span>Intercept Echo</span>
-        </a>
-        <nav class="footer-utility" aria-label="Footer utility">
-          <a href="/games/intercept-echo/privacy">Privacy</a>
-          <a href="/games/intercept-echo/terms">Terms</a>
-          <a href="/games/intercept-echo/cookies">Cookies</a>
-          <a href="/games/intercept-echo/support">Support</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Intercept Echo, a product of Nelson Grey LLC. All rights reserved.</p>
-        <div class="footer-social" aria-label="Social links">
-          <a href="mailto:support@nelsongrey.com" aria-label="Email support">@</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <footer class="site-footer echo-footer"><div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/intercept-echo/"><span class="footer-mark">IE</span><span>Intercept Echo</span></a><nav class="footer-utility" aria-label="Legal"><a href="/games/intercept-echo/privacy">Privacy</a><a href="/games/intercept-echo/terms">Terms</a><a href="/games/intercept-echo/cookies">Cookies</a><a href="/games/intercept-echo/support">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Intercept Echo, a product of Nelson Grey LLC.</p><div class="future-social" aria-hidden="true"></div></div></div></footer>
   <script src="/app.js"></script>
-  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
-    <p>We use cookies for site analytics via Google Tag Manager. <a href="/games/intercept-echo/cookies">Learn more</a>.</p>
-    <div class="cookie-consent-actions">
-      <button type="button" class="btn btn-ghost" id="cookie-decline">Decline</button>
-      <button type="button" class="btn btn-small" id="cookie-accept">Accept</button>
-    </div>
-  </div>
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden><p>We use cookies for site analytics. <a href="/games/intercept-echo/cookies">Learn more</a>.</p><div class="cookie-consent-actions"><button type="button" class="btn btn-ghost" id="cookie-decline">Decline</button><button type="button" class="btn btn-small" id="cookie-accept">Accept</button></div></div>
 </body>
 </html>
