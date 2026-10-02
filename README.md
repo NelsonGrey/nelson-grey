@@ -1,5 +1,18 @@
 # Nelson Grey Website
 
+[![License](https://img.shields.io/badge/license-proprietary-lightgrey.svg)](https://github.com/NelsonGrey/nelson-grey/blob/develop/LICENSE)
+
+## Contents
+
+- [Stack](#stack)
+- [Project Files](#project-files)
+- [Run Locally](#run-locally)
+- [Direction](#direction)
+- [Firebase Environments](#firebase-environments)
+  - [First-Time Setup](#first-time-setup)
+  - [Deploy Commands](#deploy-commands)
+  - [Automated Deploys](#automated-deploys)
+
 This repository contains the public-facing business website for Nelson Grey, an artificial intelligence fueled consulting and creative publishing company.
 
 ## Stack
