@@ -25,6 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/games/intercept-echo/game.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,14 +41,14 @@
   }
   </script>
 </head>
-<body>
-  <div class="background-grid" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="brand-mark">IE</span><span class="brand-text">Intercept Echo</span></a>
-    <nav class="main-nav" aria-label="Primary"><a href="/games/intercept-echo/">Game</a><a href="/games/intercept-echo/privacy">Privacy</a><a href="/games/intercept-echo/terms">Terms</a><a href="/games/intercept-echo/cookies">Cookies</a><a href="/games/intercept-echo/support">Support</a></nav>
+<body class="echo-site legal-shell">
+  <div class="echo-grid" aria-hidden="true"></div>
+  <header class="site-header echo-header">
+    <a class="brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="brand-mark">IE</span><span class="brand-text">INTERCEPT <b>ECHO</b></span></a>
+    <nav class="main-nav" aria-label="Primary"><a href="/games/intercept-echo/mission">Mission</a><a href="/games/intercept-echo/operations">Operations</a><a href="/games/intercept-echo/how-to-play">How to play</a></nav>
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </header>
-  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="/games/intercept-echo/">Game</a><a href="/games/intercept-echo/privacy">Privacy</a><a href="/games/intercept-echo/terms">Terms</a><a href="/games/intercept-echo/cookies">Cookies</a><a href="/games/intercept-echo/support">Support</a></nav>
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="/games/intercept-echo/mission">Mission</a><a href="/games/intercept-echo/operations">Operations</a><a href="/games/intercept-echo/how-to-play">How to play</a></nav>
   <main>
     <section class="section legal-page">
       <p class="eyebrow">Intercept Echo</p>
@@ -67,8 +68,8 @@
       <p>See also our <a href="/games/intercept-echo/privacy">Privacy Policy</a> and <a href="/games/intercept-echo/terms">Terms of Use</a>.</p>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="footer-mark">IE</span><span>Intercept Echo</span></a><nav class="footer-utility"><a href="/games/intercept-echo/privacy">Privacy</a><a href="/games/intercept-echo/terms">Terms</a><a href="/games/intercept-echo/cookies">Cookies</a><a href="/games/intercept-echo/support">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Intercept Echo, a product of Nelson Grey LLC. All rights reserved.</p><div class="footer-social"><a href="mailto:support@nelsongrey.com">@</a></div></div></div>
+  <footer class="site-footer echo-footer">
+    <div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/intercept-echo/" aria-label="Intercept Echo home"><span class="footer-mark">IE</span><span>Intercept Echo</span></a><nav class="footer-utility"><a href="/games/intercept-echo/privacy">Privacy</a><a href="/games/intercept-echo/terms">Terms</a><a href="/games/intercept-echo/cookies">Cookies</a><a href="/games/intercept-echo/support" aria-current="page">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Intercept Echo, a product of Nelson Grey LLC. All rights reserved.</p><div class="future-social" aria-hidden="true"></div></div></div>
   </footer>
   <script src="/app.js"></script>
   <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
