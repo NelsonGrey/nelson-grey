@@ -63,7 +63,7 @@ Set in **Sora Bold**, two lines, tracked −2%: **MEMORY** in near white `#EEF2F
 
 Campaign artwork should show ordered cells, contiguous blocks, empty gaps, and one controlled fault state. Avoid binary rain, motherboard photography, server racks, humanoid AI imagery, and neon cyberpunk clutter.
 
-The logo, wordmark and social layouts are original vector work. The earlier campaign key art (`assets/source/key-art-master.png`) was generated with OpenAI's built-in image-generation tool; it is no longer used in social exports but still appears on the website hero. Treat it as AI-generated and retain that provenance. The S2 concept reference image is also AI-generated and was only a visual guide.
+The confirmed survival-breakthrough artwork (`assets/source/s2-survival-breakthrough.png`) was generated with OpenAI's built-in image-generation tool and is the canonical visual reference. The corridor artwork and vector derivatives are superseded. Retain the selected artwork's provenance when campaign assets are distributed.
 
 ## Accuracy boundary
 

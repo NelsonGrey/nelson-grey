@@ -1,6 +1,6 @@
 # Asset Manifest
 
-**Identity:** S2 “Shrinking Safe Corridor” (selected 2026-10-05; see `concepts/logo-round-4-survival/s2-shrinking-corridor.png` for the AI-generated reference it was reconstructed from).
+**Identity:** the selected survival-breakthrough artwork (confirmed 2026-10-05; preserved as `assets/source/s2-survival-breakthrough.png`). The original concept folder called this image `s1-last-cell-standing.png`; “S2” is the conversational selection name.
 **Rebuild everything:** `python3 tools/build_identity.py --font "Sora[wght].ttf" --out assets` (needs `fonttools`, `rsvg-convert`). All SVG masters and PNG exports below are produced by that script.
 
 ## Vector masters (`assets/source/`) — edit these, never the PNGs
@@ -42,10 +42,12 @@ Headline “Every gap is a risk.”, supporting line “A real-time memory alloc
 
 - `assets/archive/pre-s2/` — the previous working identity, sources and social exports.
 - `concepts/logo-round-2`, `-3-d`, `-4-survival` — concept rounds, including the S2 reference image.
-- `assets/source/key-art-master.png` — AI-generated key art, **no longer used by any social export**; the website hero and “Emergency procedure” section still show it.
+- `assets/source/key-art-master.png` — archived first-round AI-generated allocation-board key art; no longer used by the website or social exports.
+- `assets/source/s2-survival-breakthrough.png` — canonical selected artwork used by the website hero, Modes page, icons, and “Emergency procedure” section.
+- `assets/source/s2-key-art-v2.png` — rejected shrinking-corridor expansion; retained temporarily for change review and not referenced by the website.
 
 ## Provenance
 
-Mark, wordmark, icon and social layouts are original vector constructions. The only AI-generated imagery remaining in the repository is the S2 concept reference, the other concept rounds, and `key-art-master.png`. See `docs/ASSET_PROVENANCE.md`. The title “Memory Survival” still requires formal clearance.
+The canonical survival-breakthrough artwork and other concept rounds were AI-generated. Social layouts and earlier corridor-derived vector assets remain design artifacts pending regeneration around the confirmed artwork. The title “Memory Survival” still requires formal clearance.
 
 Press copies: `press/BRAND_GUIDE.md`, `press/SOCIAL_COPY.md`.
