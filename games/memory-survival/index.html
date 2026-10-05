@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/consent.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Survival — Every gap is a risk</title>
+  <meta name="description" content="Place incoming processes, protect contiguous space, and survive escalating allocation storms in a real-time mobile puzzle game." />
+  <link rel="canonical" href="https://nelsongrey.com/games/memory-survival/" />
+  <meta property="og:title" content="Memory Survival — Every gap is a risk" />
+  <meta property="og:description" content="A real-time memory allocation puzzle in development for mobile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nelsongrey.com/games/memory-survival/" />
+  <meta property="og:image" content="https://nelsongrey.com/games/memory-survival/assets/social/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Memory Survival — Every gap is a risk" />
+  <meta name="twitter:description" content="Place. Release. Compact. Survive." />
+  <meta name="twitter:image" content="https://nelsongrey.com/games/memory-survival/assets/social/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/games/memory-survival/assets/mark.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/games/memory-survival/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/games/memory-survival/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/games/memory-survival/assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/games/memory-survival/game.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Memory Survival","description":"A real-time memory allocation puzzle in development for mobile.","gamePlatform":["iOS","Android"],"publisher":{"@type":"Organization","name":"Nelson Grey","url":"https://nelsongrey.com/"}}</script>
+</head>
+<body class="memory-site">
+  <header class="site-header memory-header"><a class="brand" href="/games/memory-survival/" aria-label="Memory Survival home"><img src="/games/memory-survival/assets/mark.svg" alt="" width="42" height="42" /><span>MEMORY <b>SURVIVAL</b></span></a><nav class="main-nav" aria-label="Primary"><a href="#system">The system</a><a href="#modes">Ways to play</a><a href="/games/memory-survival/how-to-play">How to play</a></nav><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button></header>
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="#system">The system</a><a href="#modes">Ways to play</a><a href="/games/memory-survival/how-to-play">How to play</a></nav>
+  <main>
+    <section class="memory-hero">
+      <img class="hero-art" src="/games/memory-survival/assets/source/key-art-master.png" alt="Abstract rows of allocated memory blocks separated by dangerous gaps" width="1896" height="830" />
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><p class="status"><span></span> In development / mobile</p><img class="wordmark" src="/games/memory-survival/assets/wordmark.svg" alt="Memory Survival" width="1200" height="300" /><h1>Every gap is a risk.</h1><p>Place incoming processes. Read their lifetimes. Protect enough contiguous space to survive the next allocation storm.</p><div class="hero-actions"><a class="memory-button" href="/games/memory-survival/how-to-play">Learn the system <span aria-hidden="true">→</span></a><span class="availability">Planned for iPhone and Android</span></div></div>
+    </section>
+    <section class="loop-strip" aria-label="Core game loop"><div><b>01</b><span><strong>Allocate</strong>Fit every request into an unbroken run.</span></div><div><b>02</b><span><strong>Anticipate</strong>Short and long lifetimes reshape the board.</span></div><div><b>03</b><span><strong>Survive</strong>Hold the line when the next storm arrives.</span></div></section>
+    <section class="memory-section system" id="system"><div><p class="status"><span></span> Contiguous or nothing</p><h2>Free space can still fail you.</h2><p>A request needs one unbroken stretch of cells. Scatter that space into small gaps and the allocator has nowhere to go—even when plenty of memory remains free.</p></div><div class="memory-demo" aria-label="A fragmented memory strip"><i class="used wide">6</i><i></i><i class="used">3</i><i></i><i></i><i class="danger">!</i><i></i><i class="used healthy">2</i><i></i><i></i><i class="used wide">5</i></div></section>
+    <section class="memory-section modes" id="modes"><p class="status"><span></span> Built for another run</p><h2>Same rules. New pressure.</h2><div class="mode-grid"><article><small>ENDLESS</small><h3>Outlast the allocator.</h3><p>Protect your clean-run multiplier through escalating waves and recover before the next storm.</p></article><article><small>SCENARIOS</small><h3>Master one problem at a time.</h3><p>Authored challenges isolate fragmentation, compaction, pinned blocks, and leaks.</p></article><article><small>DAILY</small><h3>One seed. One shared test.</h3><p>Face the same deterministic run and improve your personal best.</p></article></div></section>
+    <section class="memory-section compact"><div class="compact-art"><img src="/games/memory-survival/assets/source/key-art-master.png" alt="" loading="lazy" /></div><div><p class="status"><span></span> Emergency procedure</p><h2>Compact now. Pay for it later.</h2><p>Slide movable processes together to reclaim a usable block—but time keeps moving, requests keep waiting, and every rescue has a cost.</p><a class="text-link" href="/games/memory-survival/how-to-play">Read the field guide <span aria-hidden="true">→</span></a></div></section>
+    <section class="memory-cta"><img src="/games/memory-survival/assets/mark.svg" alt="" width="220" height="220" /><p class="status"><span></span> Allocation pending</p><h2>How long can you keep it together?</h2><p>Memory Survival is currently in development. Screens, balance, features, and release plans may change.</p></section>
+  </main>
+  <footer class="site-footer memory-footer"><div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/memory-survival/"><img src="/games/memory-survival/assets/mark.svg" alt="" width="38" height="38" /><span>Memory Survival</span></a><nav class="footer-utility" aria-label="Legal"><a href="/games/memory-survival/privacy">Privacy</a><a href="/games/memory-survival/terms">Terms</a><a href="/games/memory-survival/cookies">Cookies</a><a href="/games/memory-survival/support">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Memory Survival, a product of Nelson Grey LLC.</p></div></div></footer>
+  <script src="/app.js"></script>
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden><p>We use cookies for site analytics. <a href="/games/memory-survival/cookies">Learn more</a>.</p><div class="cookie-consent-actions"><button type="button" class="btn btn-ghost" id="cookie-decline">Decline</button><button type="button" class="btn btn-small" id="cookie-accept">Accept</button></div></div>
+</body>
+</html>
