@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/consent.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strategy Guide | Modulo Squares</title>
+  <meta name="description" content="A real strategy guide for Modulo Squares: divisibility shortcuts, why bucket 1 is always a safe landing, how level pacing changes, and the mistakes that keep players off the leaderboard." />
+  <link rel="canonical" href="https://nelsongrey.com/games/modulo-squares/strategy-guide" />
+  <meta property="og:title" content="Strategy Guide | Modulo Squares" />
+  <meta property="og:description" content="A real strategy guide for Modulo Squares: divisibility shortcuts, why bucket 1 is always a safe landing, how level pacing changes, and the mistakes that keep players off the leaderboard." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nelsongrey.com/games/modulo-squares/strategy-guide" />
+  <meta property="og:image" content="https://nelsongrey.com/games/modulo-squares/assets/app-icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Strategy Guide | Modulo Squares" />
+  <meta name="twitter:description" content="A real strategy guide for Modulo Squares: divisibility shortcuts, why bucket 1 is always a safe landing, how level pacing changes, and the mistakes that keep players off the leaderboard." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/games/modulo-squares/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/games/modulo-squares/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/games/modulo-squares/assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/games/modulo-squares/game.css" />
+</head>
+<body class="ms-site">
+  <div class="ms-grid" aria-hidden="true"></div>
+  <header class="site-header ms-header">
+    <a class="brand" href="/games/modulo-squares/" aria-label="Modulo Squares home"><span class="brand-mark">MS</span><span class="brand-text">MODULO <b>SQUARES</b></span></a>
+    <nav class="main-nav" aria-label="Primary"><a href="/games/modulo-squares/how-to-play">How to play</a><a href="/games/modulo-squares/strategy-guide" aria-current="page">Strategy</a><a href="/games/modulo-squares/modular-arithmetic-explained">The math</a></nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </header>
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="/games/modulo-squares/how-to-play">How to play</a><a href="/games/modulo-squares/strategy-guide" aria-current="page">Strategy</a><a href="/games/modulo-squares/modular-arithmetic-explained">The math</a></nav>
+  <main>
+    <article class="prose-page">
+      <p class="signal-label"><span></span> Strategy guide</p>
+      <h1>How to actually get good at Modulo Squares</h1>
+      <p class="lede">The rule is simple: land the number in a bucket it divides evenly. Getting good is not about being fast at math, it is about never doing math at all. Every trick below replaces calculation with instant recognition.</p>
+      <h2>Divisibility shortcuts that replace mental math</h2>
+      <p>Every bucket value has a shortcut that tells you whether a falling number belongs there just by looking at it. These are the same rules taught in elementary number theory, but here they become muscle memory you build under a timer.</p>
+      <div class="tile-grid"><article><h3>Divisible by 2</h3><p>The last digit is even (0, 2, 4, 6, 8).</p><p><em>134 → last digit 4 is even, so 134 is divisible by 2.</em></p></article><article><h3>Divisible by 3</h3><p>The digits add up to a multiple of 3.</p><p><em>1+3+5=9, so 135 is divisible by 3.</em></p></article><article><h3>Divisible by 4</h3><p>The last two digits, read as their own number, divide by 4.</p><p><em>316 → 16 ÷ 4 = 4, so 316 is divisible by 4.</em></p></article><article><h3>Divisible by 5</h3><p>The last digit is 0 or 5.</p><p><em>210 ends in 0, so it is divisible by 5.</em></p></article><article><h3>Divisible by 9</h3><p>The digits add up to a multiple of 9, the same trick as 3 one level up.</p><p><em>2+7+0=9, so 270 is divisible by 9.</em></p></article></div>
+      <p>Buckets for 6, 7 and 8 have no single clean digit trick. For 6, check divisibility by 2 <em>and</em> by 3. For 8, check whether the last three digits divide by 8, which is the "divisible by 4" trick applied twice. 7 has no fast shortcut worth memorizing; spotting multiples of 7 by sight only comes from repetition. Every board always includes buckets 1 through 9 plus Dead, reshuffled into different lanes each level, so you cannot predict where 7 will land, only that it is somewhere on the board.</p>
+      <h2>Bucket 1 is your safety net</h2>
+      <p>Every number divides evenly by 1, and a bucket labeled 1 is on the board at every level, so there is never a falling number without a correct home. Landing in Dead is never actually necessary. If you do not immediately recognize a divisor, look for 1 rather than guessing or defaulting to Dead.</p>
+      <h2>How level pacing changes as you climb</h2>
+      <p>The nine buckets never change. What changes is the falling numbers and the clock. Each level widens the number range (roughly 6-18 at level 1, growing to 15-45+ by level 10 and beyond) and shortens the drop interval by about 4% per level, so you read larger numbers with less time to react. The fill target that completes a level stays fixed. None of this changes which divisibility tricks apply; it only raises how fast and how far you have to apply them.</p>
+      <h2>Mistakes that keep players off the leaderboard</h2>
+      <div class="lessons"><h3>Doing full division under pressure</h3><p>Long division on a falling tile costs you the tile. Divisibility rules exist so you never actually have to divide: check the last digit or the digit sum and move on. If you catch yourself computing an exact quotient, you are working harder than the level requires.</p></div><div class="lessons"><h3>Forgetting bucket 1 is always a safe landing</h3><p>Every board includes a bucket labeled 1, and every number divides evenly by 1, so there is always a correct bucket. Players who forget this sometimes freeze on an unfamiliar number and land in Dead by default. Dead only costs you; bucket 1 never does.</p></div><div class="lessons"><h3>Locking onto one bucket instead of scanning all of them</h3><p>It is tempting to fixate on the bucket nearest your lane. The fastest players scan every live bucket against the falling number the instant it spawns, before committing to a direction. By the time the tile is halfway down, the decision should already be made.</p></div><div class="lessons"><h3>Playing the same speed at every level</h3><p>Drop speed and number range both increase as you climb. A read-then-react rhythm that works through level 10 gets punished by level 20. Pre-scan the buckets earlier in the drop as levels get harder, rather than trying to react faster.</p></div>
+      <h2>Chasing the leaderboard</h2>
+      <p>Modulo Squares posts scores to Game Center, so you can compare against friends and the global board from the Game Center button in the app. A single strong session can move you up the board even if your lifetime play is modest, so a focused run beats a long grind.</p>
+      <div class="callout"><h3>Want the math first?</h3><p>See <a href="/games/modulo-squares/how-to-play">how the game works</a>, or read <a href="/games/modulo-squares/modular-arithmetic-explained">what modular arithmetic actually is</a> if you want the theory behind the divisibility rules above.</p></div>
+      <p><a href="https://apps.apple.com/app/id6783995654" class="ms-button">Get the App <span aria-hidden="true">↗</span></a></p>
+    </article>
+  </main>
+  <footer class="site-footer ms-footer"><div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/modulo-squares/" aria-label="Modulo Squares home"><span class="footer-mark">MS</span><span>Modulo Squares</span></a><nav class="footer-utility" aria-label="Legal"><a href="/games/modulo-squares/privacy">Privacy</a><a href="/games/modulo-squares/terms">Terms</a><a href="/games/modulo-squares/cookies">Cookies</a><a href="/games/modulo-squares/support">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Modulo Squares, a product of Nelson Grey LLC.</p><div class="future-social" aria-hidden="true"></div></div></div></footer>
+  <script src="/app.js"></script>
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden><p>We use cookies for site analytics. <a href="/games/modulo-squares/cookies">Learn more</a>.</p><div class="cookie-consent-actions"><button type="button" class="btn btn-ghost" id="cookie-decline">Decline</button><button type="button" class="btn btn-small" id="cookie-accept">Accept</button></div></div>
+</body>
+</html>
