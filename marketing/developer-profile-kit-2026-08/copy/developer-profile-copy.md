@@ -8,7 +8,7 @@ Use the legal name `Nelson Grey LLC` in account, verification, seller, and contr
 - Legal organization: `Nelson Grey LLC`
 - Developer context: `Software & apps`
 - Permanent slogan: `None`
-- Account owner/login: `nelson.grey.arc@gmail.com`
+- Account owner/login: `marknelson@nelsongrey.com`
 - Public contact: `hello@nelsongrey.com`
 - Developer website: `https://nelsongrey.com/`
 

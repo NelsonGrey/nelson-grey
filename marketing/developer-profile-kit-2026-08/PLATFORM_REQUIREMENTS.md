@@ -40,7 +40,7 @@ Current [Play Console identity-verification guidance](https://support.google.com
 3. The optional public Developer Profile website.
 4. Each app's required public support email and optional support website/phone.
 
-For an organization account, Google says the verified legal organization name, legal address, developer email, and developer phone are displayed on Google Play. The organization website supplied for account identity and verification is required and distinct from the optional website link on the promotional Developer Profile. Use `https://nelsongrey.com/` as the organization website and `hello@nelsongrey.com` as the public company/developer contact. Keep `nelson.grey.arc@gmail.com` private as the Google Account owner/login only.
+For an organization account, Google says the verified legal organization name, legal address, developer email, and developer phone are displayed on Google Play. The organization website supplied for account identity and verification is required and distinct from the optional website link on the promotional Developer Profile. Use `https://nelsongrey.com/` as the organization website and `hello@nelsongrey.com` as the public company/developer contact. Keep `marknelson@nelsongrey.com` private as the Google Account owner/login only.
 
 Each app separately needs a support email. Google's [developer contact guidance](https://support.google.com/googleplay/android-developer/answer/113477?hl=en) allows those per-app details to differ from the account-level profile.
 
@@ -74,7 +74,7 @@ Each app can have an optional, localizable Marketing URL. Apple labels that dest
 
 Each app also requires a Support URL that leads to real contact information. Apple's [platform-version metadata reference](https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information) covers both fields.
 
-The Apple Account login email is not automatically a storefront field. Keep `nelson.grey.arc@gmail.com` private as the account owner/login only, and use `hello@nelsongrey.com` for public company contact where appropriate. EU traders have separate verified public contact requirements under Apple's [Digital Services Act guidance](https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/).
+The Apple Account login email is not automatically a storefront field. Keep `marknelson@nelsongrey.com` private as the account owner/login only, and use `hello@nelsongrey.com` for public company contact where appropriate. EU traders have separate verified public contact requirements under Apple's [Digital Services Act guidance](https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/).
 
 ### Strong Apple promotional routes
 

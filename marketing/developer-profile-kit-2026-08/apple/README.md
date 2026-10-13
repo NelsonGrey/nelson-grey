@@ -25,6 +25,6 @@ Apple's public App Store developer page is generated from catalog data. There is
 
 Before using the nomination text, add accurate release timing, the current app/version context, and up to five live supplemental URLs. Confirm the existing Apple developer name first; the first-app choice cannot later be edited.
 
-Use `Software & apps` as editorial page copy where useful, never as a logo lockup. Keep `nelson.grey.arc@gmail.com` private as the Apple Account owner/login only.
+Use `Software & apps` as editorial page copy where useful, never as a logo lockup. Keep `marknelson@nelsongrey.com` private as the Apple Account owner/login only.
 
 Do not recreate an App Store badge. Download the official badge through Apple's marketing tools and follow Apple's marketing identity rules.
