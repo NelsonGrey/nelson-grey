@@ -13,7 +13,7 @@ The platform requirements were verified on **2026-08-04**. Run the included vali
 - Developer-page label: **Software & apps**
 - Public website: **https://nelsongrey.com/**
 - Public contact: **hello@nelsongrey.com**
-- Account owner/login only: **nelson.grey.arc@gmail.com**
+- Account owner/login only: **marknelson@nelsongrey.com**
 - Logo lockups: **Nelson Grey with a standardized raised `LLC` legal suffix; no slogan or descriptor**
 - Visual direction: official company mark in a dark developer context; expressive product brands remain distinct
 
@@ -73,7 +73,7 @@ All raster deliverables and their measured properties are listed in `asset-manif
 
 ## Account and public-contact roles
 
-Use `https://nelsongrey.com/` as the official public website and `hello@nelsongrey.com` as the public company contact. Keep `nelson.grey.arc@gmail.com` private as the account owner/login only; do not place it in profile copy, artwork, support pages, or public store metadata. Google says an organization account's verified legal name and address, developer email, and developer phone are displayed on Google Play.
+Use `https://nelsongrey.com/` as the official public website and `hello@nelsongrey.com` as the public company contact. Keep `marknelson@nelsongrey.com` private as the account owner/login only; do not place it in profile copy, artwork, support pages, or public store metadata. Google says an organization account's verified legal name and address, developer email, and developer phone are displayed on Google Play.
 
 ## Rebuild and validate
 
