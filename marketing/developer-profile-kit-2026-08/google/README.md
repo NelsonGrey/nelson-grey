@@ -9,7 +9,7 @@
 | Promotional text | `../copy/google-promotional-text.txt` |
 | Website | `https://nelsongrey.com/` |
 | Developer-page label | `Software & apps` where an appropriate text field is available |
-| Public contact | `hello@nelsongrey.com` |
+| Public contact | `support@nelsongrey.com` |
 | Featured app | Modulo Squares only after publication and country-distribution verification |
 
 `developer-profile-preview-1600x1200.png` is a concept preview, not an upload. Google controls the final page layout.
