@@ -12,7 +12,7 @@ No account settings or external pages were changed while creating this kit. Comp
 - [ ] Confirm the exact existing Apple developer name in App Store Connect; it cannot be renamed after the first-app choice.
 - [ ] Confirm the exact current Google public developer name and submit any change early enough for review.
 - [ ] Use `https://nelsongrey.com/` as the official public website.
-- [ ] Use `hello@nelsongrey.com` as the public company contact and verify it is monitored.
+- [ ] Use `support@nelsongrey.com` as the public company contact and verify it is monitored.
 - [ ] Keep `marknelson@nelsongrey.com` private as the account owner/login only.
 - [ ] Verify the live status, country distribution, links, pricing, and platforms of every product mentioned publicly.
 
@@ -30,7 +30,7 @@ No account settings or external pages were changed while creating this kit. Comp
 - [ ] Preview the desktop and mobile crops. Google publishes no official safe-area dimensions, so verify the mark is not baked into a vulnerable edge.
 - [ ] Save and capture the assigned shareable profile URL.
 - [ ] Wait up to one hour for the preview and up to 24 hours for the first public page.
-- [ ] Reopen the public page signed out and verify name, legal identity, public address, `hello@nelsongrey.com`, phone, `https://nelsongrey.com/`, featured app, and all listed apps.
+- [ ] Reopen the public page signed out and verify name, legal identity, public address, `support@nelsongrey.com`, phone, `https://nelsongrey.com/`, featured app, and all listed apps.
 
 ## Apple
 
