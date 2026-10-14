@@ -127,4 +127,4 @@ Nelson Grey LLC
 
 ## Contact treatment
 
-Use `https://nelsongrey.com/` as the public website and `hello@nelsongrey.com` as the public company contact. Keep `nelson.grey.arc@gmail.com` private as the account owner/login only. See `PLATFORM_REQUIREMENTS.md` for the distinction between account identity, public developer contact, and per-app support contact.
+Use `https://nelsongrey.com/` as the public website and `hello@nelsongrey.com` as the public company contact. Keep `marknelson@nelsongrey.com` private as the account owner/login only. See `PLATFORM_REQUIREMENTS.md` for the distinction between account identity, public developer contact, and per-app support contact.

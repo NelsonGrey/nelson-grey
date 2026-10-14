@@ -13,7 +13,7 @@ No account settings or external pages were changed while creating this kit. Comp
 - [ ] Confirm the exact current Google public developer name and submit any change early enough for review.
 - [ ] Use `https://nelsongrey.com/` as the official public website.
 - [ ] Use `hello@nelsongrey.com` as the public company contact and verify it is monitored.
-- [ ] Keep `nelson.grey.arc@gmail.com` private as the account owner/login only.
+- [ ] Keep `marknelson@nelsongrey.com` private as the account owner/login only.
 - [ ] Verify the live status, country distribution, links, pricing, and platforms of every product mentioned publicly.
 
 ## Google Play Developer Profile
