@@ -22,7 +22,7 @@ AUTHORITATIVE_CORE_SOURCE = REPO_ROOT / "assets/nelson-grey-mark.svg"
 CORE_ICON_SOURCE = KIT_ROOT / "sources/nelson-grey-brand-icon.svg"
 DEVELOPER_ICON_SOURCE = KIT_ROOT / "sources/nelson-grey-developer-icon.svg"
 ACCOUNT_OWNER_EMAIL = "marknelson@nelsongrey.com"
-PUBLIC_CONTACT_EMAIL = "hello@nelsongrey.com"
+PUBLIC_CONTACT_EMAIL = "support@nelsongrey.com"
 # Keep this split so the validator can scan its own source for the deprecated
 # address without matching the guardrail definition itself.
 DEPRECATED_CONTACT_EMAIL = "nelson." + "gre.arc@gmail.com"
