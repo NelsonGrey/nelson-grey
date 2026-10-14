@@ -9,47 +9,62 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy-dev:
-    if: github.ref == 'refs/heads/develop'
+  deploy-nonprod:
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/staging'
     runs-on: ubuntu-latest
-    environment: development
+    permissions:
+      contents: read
+      id-token: write
+    # develop -> development / nelson-grey-dev, staging -> staging / nelson-grey-staging
+    environment: ${{ github.ref_name == 'staging' && 'staging' || 'development' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-      - name: Write service account key
-        run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > "$RUNNER_TEMP/firebase-sa.json"
-      - name: Deploy to nelson-grey-dev
+      - name: Resolve Firebase project
+        id: target
+        run: |
+          if [ "${GITHUB_REF_NAME}" = "staging" ]; then
+            echo "project=nelson-grey-staging" >> "$GITHUB_OUTPUT"
+            echo "config=firebase.staging.json" >> "$GITHUB_OUTPUT"
+          else
+            echo "project=nelson-grey-dev" >> "$GITHUB_OUTPUT"
+            echo "config=firebase.dev.json" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Select environment hosting policy
+        run: cp "${{ steps.target.outputs.config }}" firebase.json
+      - name: Write non-prod access-gate config
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-sa.json
-        run: npx firebase-tools deploy --project dev --only hosting --non-interactive
-      - name: Clean up credentials
-        if: always()
-        run: rm -f "$RUNNER_TEMP/firebase-sa.json"
-
-  deploy-staging:
-    if: github.ref == 'refs/heads/staging'
-    runs-on: ubuntu-latest
-    environment: staging
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+          ALLOWED_EMAIL_DOMAINS: ${{ secrets.ALLOWED_EMAIL_DOMAINS }}
+          ALLOWED_EMAILS: ${{ secrets.ALLOWED_EMAILS }}
+          FIREBASE_WEB_API_KEY: ${{ secrets.FIREBASE_WEB_API_KEY }}
+          FIREBASE_WEB_APP_ID: ${{ secrets.FIREBASE_WEB_APP_ID }}
+        run: |
+          if [ -z "${ALLOWED_EMAIL_DOMAINS}${ALLOWED_EMAILS}" ]; then
+            echo "::error::Set ALLOWED_EMAIL_DOMAINS and/or ALLOWED_EMAILS in this GitHub Environment (empty allowlist locks everyone out)."
+            exit 1
+          fi
+          CONFIG=$(jq -nc \
+            --arg domains "$ALLOWED_EMAIL_DOMAINS" --arg emails "$ALLOWED_EMAILS" \
+            --arg apiKey "$FIREBASE_WEB_API_KEY" --arg appId "$FIREBASE_WEB_APP_ID" \
+            '{domains: ($domains | split(",")), emails: ($emails | split(",")), apiKey: $apiKey, appId: $appId}')
+          printf 'window.__ENV_GATE__ = %s;\n' "$CONFIG" > assets/env-config.js
+      - name: Inject access gate into every page
+        run: |
+          # Source pages stay clean (production is never gated); only the deployed non-prod copy is gated.
+          find . -name '*.html' -not -path './node_modules/*' -not -path './marketing/*' -not -path './output/*' -not -path './artifacts/*' -print0 \
+            | xargs -0 sed -i 's#<head>#<head><script src="/assets/env-config.js"></script><script src="/assets/auth-gate.js"></script>#'
+          ungated=$(find . -name '*.html' -not -path './node_modules/*' -not -path './marketing/*' -not -path './output/*' -not -path './artifacts/*' -print0 | xargs -0 grep -L 'auth-gate.js' || true)
+          if [ -n "$ungated" ]; then
+            echo "::error::Pages without the access gate (no <head> tag?):"
+            echo "$ungated"
+            exit 1
+          fi
+      - name: Authenticate to Google Cloud (Workload Identity Federation, no keys)
+        uses: google-github-actions/auth@v2
         with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-      - name: Write service account key
-        run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > "$RUNNER_TEMP/firebase-sa.json"
-      - name: Deploy to nelson-grey-staging
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-sa.json
-        run: npx firebase-tools deploy --project staging --only hosting --non-interactive
-      - name: Clean up credentials
-        if: always()
-        run: rm -f "$RUNNER_TEMP/firebase-sa.json"
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: github-deploy@${{ steps.target.outputs.project }}.iam.gserviceaccount.com
+      - name: Deploy to Firebase Hosting
+        run: npx --yes firebase-tools@15 deploy --only hosting --project "${{ steps.target.outputs.project }}"
 
   deploy-prod:
     if: github.ref == 'refs/heads/main'
