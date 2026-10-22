@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "firebase": "^12.14.0"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.5"
   }
 }
