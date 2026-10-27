@@ -13,7 +13,7 @@ jobs:
     name: Site and config checks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate HTML references and JSON config
         run: python3 scripts/check-site.py
       - name: Validate workflow YAML
@@ -25,7 +25,7 @@ jobs:
     name: Secret scan
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Scan history with gitleaks
