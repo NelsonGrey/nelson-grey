@@ -1,0 +1,4 @@
+title = "nelson-grey gitleaks config"
+
+[extend]
+useDefault = true

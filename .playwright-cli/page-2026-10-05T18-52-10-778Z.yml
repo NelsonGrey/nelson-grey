@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Memory Survival home" [ref=e3] [cursor=pointer]:
+      - /url: /games/memory-survival/
+      - generic [ref=e4]: MEMORY SURVIVAL
+    - navigation "Primary" [ref=e5]:
+      - link "The system" [ref=e6] [cursor=pointer]:
+        - /url: /games/memory-survival/system
+      - link "Ways to play" [ref=e7] [cursor=pointer]:
+        - /url: /games/memory-survival/modes
+      - link "How to play" [ref=e8] [cursor=pointer]:
+        - /url: /games/memory-survival/how-to-play
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - img "A surviving column of mint and blue memory blocks breaking through a collapsing red field" [ref=e11]
+      - generic [ref=e13]:
+        - paragraph [ref=e14]: In development / mobile
+        - generic "Memory Survival" [ref=e16]:
+          - strong [ref=e17]:
+            - text: MEMORY
+            - generic [ref=e18]: SURVIVAL
+        - heading "Every gap is a risk." [level=1] [ref=e19]
+        - paragraph [ref=e20]: Place incoming processes. Read their lifetimes. Protect enough contiguous space to survive the next allocation storm.
+        - generic [ref=e21]:
+          - link "Learn the system" [ref=e22] [cursor=pointer]:
+            - /url: /games/memory-survival/system
+            - text: Learn the system
+            - generic [aria-hidden] [ref=e23]: →
+          - generic [ref=e24]: Planned for iPhone and Android
+    - region "Core game loop" [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: "01"
+        - generic [ref=e28]:
+          - strong [ref=e29]: Allocate
+          - text: Fit every request into an unbroken run.
+      - generic [ref=e30]:
+        - generic [ref=e31]: "02"
+        - generic [ref=e32]:
+          - strong [ref=e33]: Anticipate
+          - text: Short and long lifetimes reshape the board.
+      - generic [ref=e34]:
+        - generic [ref=e35]: "03"
+        - generic [ref=e36]:
+          - strong [ref=e37]: Survive
+          - text: Hold the line when the next storm arrives.
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: Contiguous or nothing
+        - heading "Free space can still fail you." [level=2] [ref=e42]
+        - paragraph [ref=e43]: A request needs one unbroken stretch of cells. Scatter that space into small gaps and the allocator has nowhere to go—even when plenty of memory remains free.
+        - link "Explore the system" [ref=e44] [cursor=pointer]:
+          - /url: /games/memory-survival/system
+          - text: Explore the system →
+      - generic "A fragmented memory strip" [ref=e45]:
+        - generic [ref=e46]: "6"
+        - generic [ref=e48]: "3"
+        - generic [ref=e51]: "!"
+        - generic [ref=e53]: "2"
+        - generic [ref=e56]: "5"
+    - generic [ref=e57]:
+      - paragraph [ref=e58]: Built for another run
+      - heading "Same rules. New pressure." [level=2] [ref=e60]
+      - generic [ref=e61]:
+        - article [ref=e62]:
+          - text: ENDLESS
+          - heading "Outlast the allocator." [level=3] [ref=e63]
+          - paragraph [ref=e64]: Protect your clean-run multiplier through escalating waves and recover before the next storm.
+        - article [ref=e65]:
+          - text: SCENARIOS
+          - heading "Master one problem at a time." [level=3] [ref=e66]
+          - paragraph [ref=e67]: Authored challenges isolate fragmentation, compaction, pinned blocks, and leaks.
+        - article [ref=e68]:
+          - text: DAILY
+          - heading "One seed. One shared test." [level=3] [ref=e69]
+          - paragraph [ref=e70]: Face the same deterministic run and improve your personal best.
+      - paragraph [ref=e71]:
+        - link "Compare ways to play" [ref=e72] [cursor=pointer]:
+          - /url: /games/memory-survival/modes
+          - text: Compare ways to play →
+    - generic [ref=e73]:
+      - img "A surviving memory column breaking through collapsing red blocks" [ref=e75]
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Emergency procedure
+        - heading "Compact now. Pay for it later." [level=2] [ref=e79]
+        - paragraph [ref=e80]: Slide movable processes together to reclaim a usable block—but time keeps moving, requests keep waiting, and every rescue has a cost.
+        - link "Read the field guide" [ref=e81] [cursor=pointer]:
+          - /url: /games/memory-survival/how-to-play
+          - text: Read the field guide →
+    - generic [ref=e82]:
+      - paragraph [ref=e83]: Allocation pending
+      - heading "How long can you keep it together?" [level=2] [ref=e85]
+      - paragraph [ref=e86]: Memory Survival is currently in development. Screens, balance, features, and release plans may change.
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - link "Memory Survival" [ref=e90] [cursor=pointer]:
+          - /url: /games/memory-survival/
+        - navigation "Legal" [ref=e92]:
+          - link "Privacy" [ref=e93] [cursor=pointer]:
+            - /url: /games/memory-survival/privacy
+          - link "Terms" [ref=e94] [cursor=pointer]:
+            - /url: /games/memory-survival/terms
+          - link "Cookies" [ref=e95] [cursor=pointer]:
+            - /url: /games/memory-survival/cookies
+          - link "Support" [ref=e96] [cursor=pointer]:
+            - /url: /games/memory-survival/support
+      - paragraph [ref=e98]: © 2026 Memory Survival, a product of Nelson Grey LLC.
+  - dialog "Cookie consent" [ref=e99]:
+    - paragraph [ref=e100]:
+      - text: We use cookies for site analytics.
+      - link "Learn more" [ref=e101] [cursor=pointer]:
+        - /url: /games/memory-survival/cookies
+      - text: .
+    - generic [ref=e102]:
+      - button "Decline" [ref=e103] [cursor=pointer]
+      - button "Accept" [ref=e104] [cursor=pointer]

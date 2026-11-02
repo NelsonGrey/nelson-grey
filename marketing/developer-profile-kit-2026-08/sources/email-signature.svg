@@ -4,6 +4,6 @@
   <image href="nelson-grey-mark-on-light.svg" x="28" y="20" width="240" height="240"/>
   <line x1="294" y1="46" x2="294" y2="234" stroke="#D9DEE7" stroke-width="3"/>
   <image href="nelson-grey-name-lockup.svg" x="338" y="-4" width="620" height="137"/>
-  <text x="342" y="157" fill="#08756F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="29" font-weight="600">hello@nelsongrey.com</text>
+  <text x="342" y="157" fill="#08756F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="29" font-weight="600">support@nelsongrey.com</text>
   <text x="342" y="211" fill="#53616F" font-family="Space Grotesk, Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="500">nelsongrey.com</text>
 </svg>

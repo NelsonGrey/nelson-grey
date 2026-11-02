@@ -93,3 +93,12 @@ Each job authenticates with a Firebase service account key stored as the
 2. Generate a JSON key for each and paste its contents into the
    `FIREBASE_SERVICE_ACCOUNT` secret on the matching GitHub Environment
    under repo Settings -> Environments.
+
+## Environment protection
+
+GitHub branch protection is unavailable on this repo's plan, so protection lives in the deploy and in the hosting layer instead.
+
+- **Access gate (dev and staging only).** The deploy workflow injects a Google sign-in wall (`assets/auth-gate.js`) into every page of the `nelson-grey-dev` and `nelson-grey-staging` copies. The allowlist comes from the `ALLOWED_EMAIL_DOMAINS` and `ALLOWED_EMAILS` secrets of the `development` / `staging` GitHub Environments and is written to `assets/env-config.js` at deploy time. An empty allowlist fails the deploy. This keeps the public out; it is not a hard auth boundary because the allowlist ships to the browser. Production is never gated.
+- **Hosting policy.** `firebase.dev.json` and `firebase.staging.json` add security headers and `noindex`; the workflow copies the right one to `firebase.json`.
+- **Keyless deploys (dev and staging).** The workflow authenticates with Workload Identity Federation as `github-deploy@<project>`, trusted only for this repository and that environment's branch. `WIF_PROVIDER` is a variable on each GitHub Environment. Production still uses the `FIREBASE_SERVICE_ACCOUNT` key.
+- **CI checks (advisory).** `ci.yml` validates the site and config, scans history with gitleaks, and flags PRs that skip an environment (`develop` → `staging` → `main`). Without branch protection these cannot block a merge.

@@ -15,13 +15,23 @@
     var firstScript = document.getElementsByTagName("script")[0];
     firstScript.parentNode.insertBefore(script, firstScript);
 
-    var iframe = document.createElement("iframe");
-    iframe.src = "https://www.googletagmanager.com/ns.html?id=" + GTM_ID;
-    iframe.height = 0;
-    iframe.width = 0;
-    iframe.style.display = "none";
-    iframe.style.visibility = "hidden";
-    document.body.insertBefore(iframe, document.body.firstChild);
+    function insertGTMFrame() {
+      if (!document.body || document.getElementById("gtm-consent-frame")) return;
+      var iframe = document.createElement("iframe");
+      iframe.id = "gtm-consent-frame";
+      iframe.src = "https://www.googletagmanager.com/ns.html?id=" + GTM_ID;
+      iframe.height = 0;
+      iframe.width = 0;
+      iframe.style.display = "none";
+      iframe.style.visibility = "hidden";
+      document.body.insertBefore(iframe, document.body.firstChild);
+    }
+
+    if (document.body) {
+      insertGTMFrame();
+    } else {
+      document.addEventListener("DOMContentLoaded", insertGTMFrame, { once: true });
+    }
   }
 
   function getConsent() {

@@ -9,14 +9,14 @@
 | Promotional text | `../copy/google-promotional-text.txt` |
 | Website | `https://nelsongrey.com/` |
 | Developer-page label | `Software & apps` where an appropriate text field is available |
-| Public contact | `hello@nelsongrey.com` |
+| Public contact | `support@nelsongrey.com` |
 | Featured app | Modulo Squares only after publication and country-distribution verification |
 
 `developer-profile-preview-1600x1200.png` is a concept preview, not an upload. Google controls the final page layout.
 
 The developer icon uses the dark build-environment colorway documented in `../DEVELOPER_MARK.md`. Its geometry is identical to the official Nelson Grey mark: the field is `#101722`, the `N` is `#F8F4EA`, and the original teal and gold are unchanged. It is intentionally different from every app icon. Do not use it in the Play app-icon field.
 
-`Software & apps` is page copy, not a slogan or logo descriptor. Do not bake it into the icon or header. Keep `nelson.grey.arc@gmail.com` private as the account owner/login only.
+`Software & apps` is page copy, not a slogan or logo descriptor. Do not bake it into the icon or header. Keep `marknelson@nelsongrey.com` private as the account owner/login only.
 
 ## Preflight facts
 
