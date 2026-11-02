@@ -100,11 +100,11 @@ Body: `Nelson Grey is the public brand of Nelson Grey LLC. The company works acr
 
 Headline: `Company and product inquiries.`
 
-Body: `Contact Nelson Grey LLC at hello@nelsongrey.com. For product support, use the support destination on that product's official page or store listing.`
+Body: `Contact Nelson Grey LLC at support@nelsongrey.com. For product support, use the support destination on that product's official page or store listing.`
 
 Action: `Email Nelson Grey LLC`
 
-Destination: `mailto:hello@nelsongrey.com`
+Destination: `mailto:support@nelsongrey.com`
 
 ## Footer
 

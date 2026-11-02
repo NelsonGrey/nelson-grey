@@ -5,7 +5,7 @@ Apple's public App Store developer page is generated from catalog data. There is
 ## Use this kit on Apple through
 
 1. `https://nelsongrey.com/` or an appropriate live Nelson Grey portfolio page used as each app's Marketing URL.
-2. Product-specific Support URLs with real, monitored contact information; use `hello@nelsongrey.com` for public company contact where appropriate.
+2. Product-specific Support URLs with real, monitored contact information; use `support@nelsongrey.com` for public company contact where appropriate.
 3. Consistent app icons and product-page media within each app's own identity.
 4. Custom product pages for distinct audiences and campaign stories.
 5. Product-page optimization for icon, screenshot, and preview decisions.

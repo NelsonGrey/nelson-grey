@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/consent.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Modular Arithmetic? | Modulo Squares</title>
+  <meta name="description" content="A plain-language explanation of modular arithmetic: what the mod operator means, worked examples, where it shows up in cryptography, hashing and calendars, and how Modulo Squares turns it into a game." />
+  <link rel="canonical" href="https://nelsongrey.com/games/modulo-squares/modular-arithmetic-explained" />
+  <meta property="og:title" content="What Is Modular Arithmetic? | Modulo Squares" />
+  <meta property="og:description" content="A plain-language explanation of modular arithmetic: what the mod operator means, worked examples, where it shows up in cryptography, hashing and calendars, and how Modulo Squares turns it into a game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nelsongrey.com/games/modulo-squares/modular-arithmetic-explained" />
+  <meta property="og:image" content="https://nelsongrey.com/games/modulo-squares/assets/app-icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="What Is Modular Arithmetic? | Modulo Squares" />
+  <meta name="twitter:description" content="A plain-language explanation of modular arithmetic: what the mod operator means, worked examples, where it shows up in cryptography, hashing and calendars, and how Modulo Squares turns it into a game." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/games/modulo-squares/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/games/modulo-squares/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/games/modulo-squares/assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/games/modulo-squares/game.css" />
+</head>
+<body class="ms-site">
+  <div class="ms-grid" aria-hidden="true"></div>
+  <header class="site-header ms-header">
+    <a class="brand" href="/games/modulo-squares/" aria-label="Modulo Squares home"><span class="brand-mark">MS</span><span class="brand-text">MODULO <b>SQUARES</b></span></a>
+    <nav class="main-nav" aria-label="Primary"><a href="/games/modulo-squares/how-to-play">How to play</a><a href="/games/modulo-squares/strategy-guide">Strategy</a><a href="/games/modulo-squares/modular-arithmetic-explained" aria-current="page">The math</a></nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </header>
+  <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile"><a href="/games/modulo-squares/how-to-play">How to play</a><a href="/games/modulo-squares/strategy-guide">Strategy</a><a href="/games/modulo-squares/modular-arithmetic-explained" aria-current="page">The math</a></nav>
+  <main>
+    <article class="prose-page">
+      <p class="signal-label"><span></span> The math behind the game</p>
+      <h1>What is modular arithmetic?</h1>
+      <p class="lede">Modular arithmetic is arithmetic that wraps around instead of counting up forever. Once a value reaches a fixed limit, the "modulus," it resets to zero, the same way a clock resets after 12. It shows up constantly in computing and cryptography, and it is the entire mechanic behind this game.</p>
+      <h2>The mod operator, in plain terms</h2>
+      <p>When you see <code>a mod n</code> (often written <code>a % n</code> in code), it means: divide <em>a</em> by <em>n</em>, and keep only the remainder.</p>
+      <pre>15 mod 4 = 3    // 15 ÷ 4 = 3 remainder 3
+20 mod 5 = 0    // 20 ÷ 5 = 4 remainder 0 (divides evenly)
+7 mod 12 = 7    // 7 is already less than 12, so it is unchanged</pre>
+      <p>When the remainder is exactly 0, <em>n</em> divides <em>a</em> evenly, so <em>a</em> is a multiple of <em>n</em>. That single case is the rule this game is built around: a falling number belongs in a bucket exactly when the number mod the bucket's value equals zero.</p>
+      <h2>Where it actually shows up</h2>
+      <div class="lessons"><h3>Clocks and calendars</h3><p>A 12-hour clock is modular arithmetic you already use daily: 9 hours after 8 o'clock isn't 17 o'clock, it's 5 o'clock, because time wraps around every 12. That wraparound, 17 mod 12 = 5, is the entire concept.</p></div><div class="lessons"><h3>Cryptography</h3><p>Modern encryption, including the RSA algorithm that secures a huge share of internet traffic, is built on modular exponentiation: raising numbers to a power and reducing the result modulo a very large number. Every HTTPS connection you use leans on this.</p></div><div class="lessons"><h3>Hash tables</h3><p>Databases, caches and programming-language dictionaries commonly pick a storage slot by taking a value modulo the table size. It is one of the simplest ways to spread data evenly across a fixed number of buckets, which is coincidentally the same idea as this game.</p></div><div class="lessons"><h3>Check digits</h3><p>The last digit of an ISBN, and the Luhn algorithm behind credit card numbers, both compute a weighted sum and check it against a fixed modulus. It is how systems catch a single mistyped digit before it causes real damage.</p></div><div class="lessons"><h3>Music theory</h3><p>Pitches repeat every 12 semitones: a C is a C whether it is high or low. Musicians call this octave equivalence, but it is modular arithmetic with a modulus of 12, the same structure as a clock.</p></div>
+      <h2>Try it yourself</h2>
+      <p>Work these out before reading on. They are exactly the calculations the game asks you to make instantly, just without a timer:</p>
+      <ul><li>23 mod 5 = ?</li><li>36 mod 6 = ?</li><li>44 mod 9 = ?</li></ul>
+      <p><strong>Answers:</strong> 23 mod 5 = 3 (23 ÷ 5 is 4 remainder 3). 36 mod 6 = 0 (a clean multiple of 6, so this one scores). 44 mod 9 = 8 (9 × 4 = 36, and 44 − 36 = 8).</p>
+      <h2>How the game turns this into a puzzle</h2>
+      <p>Modulo Squares gives every falling number a set of live buckets, each labeled with a divisor. Land the number where the remainder is zero and it scores a clean division; land it anywhere else and you take a penalty. Play enough rounds and the calculation stops being a calculation: you start recognizing multiples of 6, 7 and 9 on sight, the way you read "9:00" on a clock without counting hour marks. That recognition is what the <a href="/games/modulo-squares/strategy-guide">strategy guide</a> is about building.</p>
+      <div class="callout"><h3>Put it into practice</h3><p>Read the <a href="/games/modulo-squares/how-to-play">game mechanics</a>, then try landing a few clean divisions yourself.</p></div>
+      <p><a href="https://apps.apple.com/app/id6783995654" class="ms-button">Get the App <span aria-hidden="true">↗</span></a></p>
+    </article>
+  </main>
+  <footer class="site-footer ms-footer"><div class="footer-inner"><div class="footer-top"><a class="footer-brand" href="/games/modulo-squares/" aria-label="Modulo Squares home"><span class="footer-mark">MS</span><span>Modulo Squares</span></a><nav class="footer-utility" aria-label="Legal"><a href="/games/modulo-squares/privacy">Privacy</a><a href="/games/modulo-squares/terms">Terms</a><a href="/games/modulo-squares/cookies">Cookies</a><a href="/games/modulo-squares/support">Support</a></nav></div><div class="footer-bottom"><p>&copy; 2026 Modulo Squares, a product of Nelson Grey LLC.</p><div class="future-social" aria-hidden="true"></div></div></div></footer>
+  <script src="/app.js"></script>
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden><p>We use cookies for site analytics. <a href="/games/modulo-squares/cookies">Learn more</a>.</p><div class="cookie-consent-actions"><button type="button" class="btn btn-ghost" id="cookie-decline">Decline</button><button type="button" class="btn btn-small" id="cookie-accept">Accept</button></div></div>
+</body>
+</html>

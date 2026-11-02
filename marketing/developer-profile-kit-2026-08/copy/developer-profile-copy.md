@@ -9,7 +9,7 @@ Use the legal name `Nelson Grey LLC` in account, verification, seller, and contr
 - Developer context: `Software & apps`
 - Permanent slogan: `None`
 - Account owner/login: `marknelson@nelsongrey.com`
-- Public contact: `hello@nelsongrey.com`
+- Public contact: `support@nelsongrey.com`
 - Developer website: `https://nelsongrey.com/`
 
 Keep the Gmail address private to account ownership and sign-in. Use the company-domain address and confirmed organization website in public-facing copy and artwork.
@@ -71,7 +71,7 @@ Nelson Grey LLC develops software and digital products alongside its AI strategy
 
 ### Press boilerplate
 
-Nelson Grey LLC develops software and digital products alongside its AI strategy, automation, and publishing work. Learn more at `https://nelsongrey.com/` or contact `hello@nelsongrey.com`.
+Nelson Grey LLC develops software and digital products alongside its AI strategy, automation, and publishing work. Learn more at `https://nelsongrey.com/` or contact `support@nelsongrey.com`.
 
 ## Social and channel copy
 
@@ -95,7 +95,7 @@ Updates on software and digital product work from Nelson Grey LLC.
 
 ```text
 Nelson Grey LLC
-hello@nelsongrey.com
+support@nelsongrey.com
 https://nelsongrey.com/
 ```
 
