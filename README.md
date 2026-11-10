@@ -27,7 +27,8 @@ This repository contains the public-facing business website for Nelson Grey, an 
 - `app.js`: Interaction behavior (mobile navigation, reveal animations, contact UX)
 - `dev-server.js`: Local static server for development and preview
 - `marketing/developer-profile-kit-2026-08/`: Working developer-profile brand, platform, and promotional assets; excluded from Firebase Hosting
-- `games/<game-slug>/`: Privacy/Terms/Support pages for a published game that doesn't have its own site (e.g. `games/intercept-echo/`), reusing this site's design system; not linked from the main nav, only from that game's store listing and in-app links
+- `games/index.html`: Games hub linked from the main navigation
+- `games/<game-slug>/`: Public pages for a Nelson Grey game, reusing this site's design system and linked from `/games`
 
 ## Run Locally
 
@@ -43,7 +44,7 @@ http://127.0.0.1:4173
 
 ## Direction
 
-The repository is intentionally scoped to support a modern, professional business homepage and related website assets, plus the legal/support pages for Nelson Grey's published games — not full per-game marketing sites (Modulo Squares' promotional site is its own separate repo/domain; games without one of their own get lightweight pages here instead, under `games/<game-slug>/`).
+The repository holds the public Nelson Grey site and the game pages under `games/<game-slug>/`. The Games page in the main navigation links to those games. The old modulosquares.com host is configured in the separate Modulo Squares repository, not here.
 
 ## Firebase Environments
 
@@ -56,7 +57,7 @@ This project is configured for Firebase Hosting across three environments:
 Configuration files:
 
 - `.firebaserc`: project alias mapping
-- `firebase.json`: hosting setup (static site + SPA rewrites)
+- `firebase.json`: hosting setup (static site, clean URLs, and a real 404 for unknown paths)
 
 ### First-Time Setup
 
