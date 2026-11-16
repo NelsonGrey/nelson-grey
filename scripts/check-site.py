@@ -3,6 +3,7 @@
 
 Checks every deployed HTML page (repo root and games/*) for: <html lang>, <title>, viewport,
 meta description, and that local links, scripts, stylesheets, and images resolve to files.
+Non-home pages must carry a BreadcrumbList whose last URL matches the canonical.
 Also validates the JSON config files.
 Run from the repository root: python3 scripts/check-site.py
 """
@@ -67,6 +68,35 @@ def local_target(site: Path, page: Path, ref: str):
 
 APP_STORE = "https://apps.apple.com/us/app/modulo-squares/id6783995654"
 SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+ORIGIN = "https://nelsongrey.com"
+HOME_URL = f"{ORIGIN}/"
+JSON_LD_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+CANONICAL_RE = re.compile(r'<link rel="canonical" href="([^"]+)"\s*/?>')
+
+# Breadcrumb labels for non-home pages. Game hubs use GAME_NAMES; every other slug uses PAGE_NAMES.
+GAME_NAMES = {
+    "modulo-squares": "Modulo Squares",
+    "intercept-echo": "Intercept Echo",
+    "memory-survival": "Memory Survival",
+}
+PAGE_NAMES = {
+    "plans": "Plans",
+    "privacy": "Privacy",
+    "results": "Results",
+    "solutions": "Solutions",
+    "support": "Support",
+    "terms": "Terms",
+    "contact": "Contact",
+    "cookies": "Cookies",
+    "games": "Games",
+    "how-to-play": "How to Play",
+    "modular-arithmetic-explained": "Modular Arithmetic",
+    "strategy-guide": "Strategy Guide",
+    "mission": "The Mission",
+    "operations": "Operations",
+    "modes": "Ways to Play",
+    "system": "The System",
+}
 
 
 def trailing_slash_url(url: str) -> bool:
@@ -89,6 +119,87 @@ def check_sitemap() -> list[str]:
     for loc in locs:
         if trailing_slash_url(loc):
             errors.append(f"sitemap.xml: trailing slash in {loc}")
+    return errors
+
+
+def site_pages():
+    return sorted(p for p in ROOT.rglob("*.html") if not SKIP & set(p.relative_to(ROOT).parts))
+
+
+def breadcrumb_items(rel: Path) -> list[dict] | None:
+    """Expected BreadcrumbList items for a public page.
+
+    Home, the 404 page, and the separate redirect site do not get a trail.
+    """
+    if "redirect-sites" in rel.parts or rel.name == "404.html" or rel == Path("index.html"):
+        return None
+    segments = list(rel.parent.parts) if rel.name == "index.html" else list(rel.with_suffix("").parts)
+    if not segments:
+        return None
+    crumbs = [("Home", HOME_URL)]
+    if segments[0] == "games":
+        crumbs.append(("Games", f"{ORIGIN}/games"))
+        if len(segments) >= 2:
+            game = segments[1]
+            if game not in GAME_NAMES:
+                raise ValueError(f"unknown game {game}")
+            crumbs.append((GAME_NAMES[game], f"{ORIGIN}/games/{game}"))
+        if len(segments) == 3:
+            slug = segments[2]
+            if slug not in PAGE_NAMES:
+                raise ValueError(f"unknown page {slug}")
+            crumbs.append((PAGE_NAMES[slug], f"{ORIGIN}/games/{segments[1]}/{slug}"))
+        elif len(segments) > 3:
+            raise ValueError(f"unexpected path depth {'/'.join(segments)}")
+    else:
+        if len(segments) != 1 or segments[0] not in PAGE_NAMES:
+            raise ValueError(f"unknown page {'/'.join(segments)}")
+        slug = segments[0]
+        crumbs.append((PAGE_NAMES[slug], f"{ORIGIN}/{slug}"))
+    return [
+        {"@type": "ListItem", "position": index, "name": name, "item": url}
+        for index, (name, url) in enumerate(crumbs, 1)
+    ]
+
+
+def check_breadcrumbs() -> list[str]:
+    errors = []
+    for page in site_pages():
+        rel = page.relative_to(ROOT)
+        text = page.read_text(encoding="utf-8")
+        parsed = []
+        for raw in JSON_LD_RE.findall(text):
+            try:
+                parsed.append(json.loads(raw))
+            except json.JSONDecodeError as exc:
+                errors.append(f"{rel}: invalid JSON-LD ({exc})")
+        crumbs = [data for data in parsed if isinstance(data, dict) and data.get("@type") == "BreadcrumbList"]
+        try:
+            expected = breadcrumb_items(rel)
+        except ValueError as exc:
+            errors.append(f"{rel}: {exc}")
+            continue
+        if expected is None:
+            if crumbs:
+                errors.append(f"{rel}: unexpected BreadcrumbList")
+            continue
+        if len(crumbs) != 1:
+            errors.append(f"{rel}: expected one BreadcrumbList, found {len(crumbs)}")
+            continue
+        data = crumbs[0]
+        if data.get("@context") != "https://schema.org":
+            errors.append(f"{rel}: BreadcrumbList @context must be https://schema.org")
+        items = data.get("itemListElement")
+        if items != expected:
+            errors.append(f"{rel}: BreadcrumbList does not match the expected trail")
+            continue
+        canonical = CANONICAL_RE.search(text)
+        canonical_url = canonical.group(1) if canonical else None
+        if canonical_url != expected[-1]["item"]:
+            errors.append(f"{rel}: breadcrumb URL {expected[-1]['item']} does not match canonical {canonical_url}")
+        for item in expected:
+            if trailing_slash_url(item["item"]):
+                errors.append(f"{rel}: breadcrumb URL has a trailing slash ({item['item']})")
     return errors
 
 
@@ -156,6 +267,7 @@ def main() -> int:
         errors.append("404.html: missing custom 404 page")
     errors.extend(check_sitemap())
     errors.extend(check_modulo_squares())
+    errors.extend(check_breadcrumbs())
     for name in JSON_FILES:
         path = ROOT / name
         if path.exists():
