@@ -7,6 +7,7 @@
       "**/.*",
       "**/node_modules/**",
       "marketing/**",
+      "redirect-sites/**",
       "output/**",
       "artifacts/**",
       "**/*.md",
